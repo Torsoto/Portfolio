@@ -1,7 +1,12 @@
-import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <p className="grid text-5xl font-bold text-center">Tolga Topal</p>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
