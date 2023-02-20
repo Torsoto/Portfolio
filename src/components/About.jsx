@@ -4,11 +4,11 @@ import { GrMapLocation } from "react-icons/gr";
 
 export const About = () => {
   return (
-    <div id="about" className="w-full px-4 pt-8 pb-16 bg-[#B9E2F4]">
-      <h1 className="text-2xl font-bold text-center text-black bg-[#B9E2F4] pb-2">
+    <div id="about" className="w-full px-4 pt-8 pb-24 bg-[#B9E2F4]">
+      <h1 className="text-2xl font-bold text-center text-black bg-[#B9E2F4] pb-20">
         ABOUT ME
       </h1>
-      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 place-items-center bg-[#B9E2F4]">
+      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2  lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#B9E2F4]">
         <div className="bg-[#B9E2F4] relative">
           <img
             src={profile}
@@ -33,11 +33,11 @@ export const About = () => {
             </p>
           </div>
         </div>
-        <p className="bg-[#B9E2F4] text-xl text-center font-mono pt-10 md:pt-0 md:text-left">
+        <p className="bg-[#B9E2F4] lg:text-3xl text-xl  text-center font-mono p-8 md:p-0 md:text-left">
           Hi :), I'm Tolga Topal aka{" "}
           <a
             href="https://github.com/Torsoto"
-            className="bg-[#B9E2F4] text-violet-500"
+            className="bg-[#B9E2F4] text-violet-500 font-bold"
             title="My Github"
           >
             Torsoto
