@@ -4,7 +4,30 @@
 
 * {
   box-sizing: border-box;
-  background-color: #212121;
+  background-color: #242424;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20%,
+  60% {
+    transform: rotate(-10deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+.animate-wave {
+  animation: wave 2s infinite;
 }
