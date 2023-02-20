@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../components/images/favicon.png";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,22 +15,46 @@ const Navbar = () => {
       <img src={logo} alt="Profile Logo" width={40} className="mr-1"></img>
       <h1 className="w-full text-3xl font-bold md:text-4xl">Tolga Topal</h1>
       <ul className="hidden md:flex whitespace-nowrap">
-        <li className="p-4 cursor-pointer hover:font-bold hover:text-blue-400 text-[18px]">
-          Home
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            About Me
+          </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:font-bold hover:text-blue-400 text-[18px]">
-          About Me
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
+          <Link
+            to="projects"
+            smooth={true}
+            duration={700}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Projects
+          </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:font-bold hover:text-blue-400 text-[18px]">
-          Projects
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
+          <Link
+            to="skills"
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Skills
+          </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:font-bold hover:text-blue-400 text-[18px]">
-          Skills
-        </li>
-        <li className="p-4 cursor-pointer hover:font-bold hover:text-blue-400 text-[18px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
           Expierence
         </li>
-        <li className="p-4 cursor-pointer hover:font-bold hover:text-blue-400 text-[18px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
           Contact Me
         </li>
       </ul>
@@ -50,19 +75,25 @@ const Navbar = () => {
           </h1>
         </div>
         <ul className="uppercase ">
-          <li className="p-4 border-b cursor-pointer hover:font-bold hover:text-blue-400 ">
-            Home
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:scale-105 hover:text-blue-400 ">
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              About Me
+            </Link>
           </li>
-          <li className="p-4 border-b cursor-pointer hover:font-bold hover:text-blue-400 ">
-            About Me
-          </li>
-          <li className="p-4 border-b cursor-pointer hover:font-bold hover:text-blue-400 ">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:scale-105 hover:text-blue-400 ">
             Projects
           </li>
-          <li className="p-4 border-b cursor-pointer hover:font-bold hover:text-blue-400 ">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:scale-105 hover:text-blue-400 ">
             Skills
           </li>
-          <li className="p-4 border-b cursor-pointer hover:font-bold hover:text-blue-400 ">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:scale-105 hover:text-blue-400 ">
             Expierence
           </li>
           <li className="p-4 cursor-pointer hover:font-bold hover:text-blue-400">

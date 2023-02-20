@@ -19,7 +19,7 @@ function Hero() {
         </p>
         <h1 className="p-4 text-5xl font-bold md:text-7xl sm:text-5xl ">
           <Typed
-            strings={["Tolga Topal"]}
+            strings={["Tolga Topal ", "Torsoto"]}
             typeSpeed={60}
             backSpeed={150}
             loop
