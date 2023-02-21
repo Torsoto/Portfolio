@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between h-24 px-4 max-w-[1600px] mx-auto text-white ">
       <img src={logo} alt="Profile Logo" width={40} className="mr-1"></img>
-      <h1 className="w-full text-3xl font-bold md:text-4xl">Tolga Topal</h1>
+      <h1 className="w-full text-4xl font-bold md:text-5xl">Tolga Topal</h1>
       <ul className="hidden md:flex whitespace-nowrap">
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
           <Link
             to="about"
             smooth={true}
@@ -27,7 +27,7 @@ const Navbar = () => {
             About Me
           </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
           <Link
             to="projects"
             smooth={true}
@@ -39,7 +39,7 @@ const Navbar = () => {
             Projects
           </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
           <Link
             to="Expierence"
             smooth={true}
@@ -51,17 +51,17 @@ const Navbar = () => {
             Expierence
           </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
-        <Link
-              to="contact"
-              smooth={true}
-              duration={1000}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              Contact
-            </Link>
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
       <div className="block cursor-pointer md:hidden" onClick={handleNav}>
@@ -70,7 +70,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full ease-in-out duration-500 z-50"
+            ? "fixed left-0 top-0 w-[65%] border-r border-r-gray-900 h-full ease-in-out duration-500 z-50"
             : "fixed left-[-100%]"
         }
       >
@@ -80,8 +80,8 @@ const Navbar = () => {
             Tolga Topal
           </h1>
         </div>
-        <ul className="grid gap-1 uppercase">
-          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-blue-400 hover:font-bold">
+        <ul className="grid gap-1 pt-3 uppercase">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
             <Link
               to="about"
               smooth={true}
@@ -93,7 +93,7 @@ const Navbar = () => {
               About Me
             </Link>
           </li>
-          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-blue-400 hover:font-bold">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
             <Link
               to="projects"
               smooth={true}
@@ -105,7 +105,7 @@ const Navbar = () => {
               Projects
             </Link>
           </li>
-          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-blue-400 hover:font-bold">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
             <Link
               to="Expierence"
               smooth={true}
@@ -117,8 +117,8 @@ const Navbar = () => {
               Expierence
             </Link>
           </li>
-          <li className="p-4 transition-all duration-100 ease-in-out cursor-pointer hover:text-blue-400 hover:font-bold">
-          <Link
+          <li className="p-4 transition-all duration-100 ease-in-out cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
+            <Link
               to="contact"
               smooth={true}
               duration={1000}

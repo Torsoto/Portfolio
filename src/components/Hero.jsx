@@ -12,21 +12,21 @@ function Hero() {
           className="mx-auto rounded-full w-[70px] md:w-[100px] "
           title="My usual Profile-pic"
         ></img>
-        <p className="">
+        <p className="font-Montserrat">
           HI THERE
           <span className="inline-block p-2 rounded-full animate-wave">👋</span>
           I'M
         </p>
-        <h1 className="p-4 text-5xl font-bold md:text-7xl sm:text-5xl ">
+        <h1 className="p-4 text-5xl font-extrabold md:text-7xl sm:text-5xl font-Poppins">
           <Typed
-            strings={["Tolga Topal ", "Torsoto"]}
+            strings={["TOLGA TOPAL ", "TORSOTO", "Tolga Topal", "Torsoto"]}
             typeSpeed={60}
             backSpeed={150}
             loop
           />
         </h1>
         <div>
-          <p className="p-2 font-mono text-xl md:text-2xl">
+          <p className="p-2 text-xl font-Montserrat md:text-2xl">
             Computer Science and Digitial Communications Student at FH Campus
             Wien
           </p>

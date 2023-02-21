@@ -4,16 +4,16 @@ import { GrMapLocation } from "react-icons/gr";
 
 export const About = () => {
   return (
-    <div id="about" className="w-full px-4 pt-8 pb-24 bg-[#B9E2F4]">
-      <h1 className="text-2xl font-bold text-center text-black bg-[#B9E2F4] pb-20">
+    <div id="about" className="w-full px-4 pt-8 pb-24 bg-[#F3F3F3]">
+      <h1 className="text-4xl font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
         ABOUT ME
       </h1>
-      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2  lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#B9E2F4]">
-        <div className="bg-[#B9E2F4] relative">
+      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#F3F3F3]">
+        <div className="bg-[#F3F3F3] relative">
           <img
             src={profile}
             alt="ME"
-            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-2xl  w-96 rounded-[12px]"
+            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-2xl  w-96 rounded-sm"
           ></img>
           <div className="absolute left-0 right-0 z-10 text-center bg-white bottom-3">
             <p className="inline-flex items-center font-mono font-bold text-black bg-white">
@@ -33,20 +33,24 @@ export const About = () => {
             </p>
           </div>
         </div>
-        <p className="bg-[#B9E2F4] lg:text-3xl text-xl  text-center font-mono p-8 md:p-0 md:text-left">
-          Hi :), I'm Tolga Topal aka{" "}
+        <p className="bg-[#F3F3F3] lg:text-3xl text-xl  text-center p-8 md:p-0 md:text-left">
+          I'm Tolga Topal aka{" "}
           <a
             href="https://github.com/Torsoto"
-            className="bg-[#B9E2F4] text-violet-500 font-bold"
+            className="bg-[#F3F3F3] text-violet-700 font-bold"
             title="My Github"
           >
             Torsoto
           </a>
-          , a 21-year-old student. When I'm not working out at the gym, I enjoy
-          coding and creating useful & interesting projects. In my free time, I
-          also love playing video games and watching movies/tv-series. As a
-          learning developer with a passion for fitness and Tech, I am always
-          seeking new challenges and opportunities to improve my craft.
+          , a 21-year-old student.
+          <br />
+          When I'm not working out at the gym, I enjoy coding and creating
+          useful & interesting projects.
+          <br />
+          In my free time, I also love playing video games and watching
+          movies/tv-series. As a learning developer with a passion for fitness
+          and Tech, I am always seeking new challenges and opportunities to
+          improve my craft.
         </p>
       </div>
     </div>

@@ -2,15 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.otf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
-  background-color: #242424;
+  background-color: #1d1e26;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 @keyframes wave {
