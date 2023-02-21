@@ -52,7 +52,16 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-blue-400 text-[18px]">
-          Contact Me
+        <Link
+              to="contact"
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Contact
+            </Link>
         </li>
       </ul>
       <div className="block cursor-pointer md:hidden" onClick={handleNav}>
@@ -109,7 +118,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4 transition-all duration-100 ease-in-out cursor-pointer hover:text-blue-400 hover:font-bold">
-            Contact Me
+          <Link
+              to="contact"
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
