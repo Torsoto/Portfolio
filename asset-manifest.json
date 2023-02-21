@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2217b933.css",
-    "main.js": "/Portfolio/static/js/main.13e069ee.js",
+    "main.css": "/Portfolio/static/css/main.eb079386.css",
+    "main.js": "/Portfolio/static/js/main.5d826a70.js",
     "static/media/2.jpg": "/Portfolio/static/media/2.84a87c619202c0566a7b.jpg",
     "static/media/profile1.jpg": "/Portfolio/static/media/profile1.ae5292e9efcd07e6afa7.jpg",
+    "static/media/Montserrat-Regular.otf": "/Portfolio/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
+    "static/media/Roboto-Regular.ttf": "/Portfolio/static/media/Roboto-Regular.6bede58e856278b0f8f1.ttf",
+    "static/media/Poppins-Regular.ttf": "/Portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/LUFFYNR1.jpg": "/Portfolio/static/media/LUFFYNR1.e7662803dd4666fbf8d2.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.2217b933.css.map": "/Portfolio/static/css/main.2217b933.css.map",
-    "main.13e069ee.js.map": "/Portfolio/static/js/main.13e069ee.js.map"
+    "main.eb079386.css.map": "/Portfolio/static/css/main.eb079386.css.map",
+    "main.5d826a70.js.map": "/Portfolio/static/js/main.5d826a70.js.map"
   },
   "entrypoints": [
-    "static/css/main.2217b933.css",
-    "static/js/main.13e069ee.js"
+    "static/css/main.eb079386.css",
+    "static/js/main.5d826a70.js"
   ]
 }
