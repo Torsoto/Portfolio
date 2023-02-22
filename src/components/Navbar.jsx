@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between h-24 px-4 max-w-[1600px] mx-auto text-white ">
+    <div className="flex items-center justify-between h-24 px-4 max-w-[1600px] mx-auto text-white">
       <img src={logo} alt="Profile Logo" width={40} className="mr-1"></img>
       <h1 className="w-full text-4xl font-bold md:text-5xl">Tolga Topal</h1>
       <ul className="hidden md:flex whitespace-nowrap">
@@ -64,13 +64,16 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div className="block cursor-pointer md:hidden" onClick={handleNav}>
-        {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25} />}
+      <div
+        className="fixed  border-[7px] border-[#1d1e26] rounded-full cursor-pointer right-4 md:hidden hover:scale-110"
+        onClick={handleNav}
+      >
+        {nav ? <AiOutlineClose size={26} /> : <AiOutlineMenu size={26} />}
       </div>
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[65%] border-r border-r-gray-900 h-full ease-in-out duration-500 z-50"
+            ? "fixed left-0 top-0 w-[65%] border-r border-r-gray-900 h-full ease-in-out duration-500 z-50 "
             : "fixed left-[-100%]"
         }
       >
