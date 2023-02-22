@@ -1,10 +1,11 @@
 import React from "react";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin, FaReact } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 import logo from "../components/images/favicon.png";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#0d0e11] py-8 px-4 mx-auto flex flex-col items-center justify-center text-white">
+    <div className="w-full bg-[#0d0e11] py-4 px-4 mx-auto flex flex-col items-center justify-center text-white">
       <div className="flex items-center justify-center gap-2 bg-[#0d0e11]">
         <img
           src={logo}
@@ -38,7 +39,20 @@ const Footer = () => {
         </a>
       </div>
       <div className="bg-[#0d0e11]">
-        <p className="bg-[#0d0e11] mt-2">©Torsoto 2023</p>
+        <p className="bg-[#0d0e11] mt-2 text-center">©Torsoto 2023</p>
+        <p className="bg-[#0d0e11] text-gray-500 flex gap-2">
+          created with{" "}
+          <FaReact
+            size={24}
+            className="text-gray-500 bg-[#0d0e11]"
+            title="React"
+          />{" "}
+          <SiTailwindcss
+            className="text-gray-500 bg-[#0d0e11]"
+            size={24}
+            title="Tailwind CSS"
+          />
+        </p>
       </div>
     </div>
   );

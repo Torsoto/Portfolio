@@ -12,8 +12,10 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between h-24 px-4 max-w-[1600px] mx-auto text-white">
-      <img src={logo} alt="Profile Logo" width={40} className="mr-1"></img>
-      <h1 className="w-full text-4xl font-bold md:text-5xl">Tolga Topal</h1>
+      <img src={logo} alt="Profile Logo" width={40} className="mr-2"></img>
+      <h1 className="w-full text-4xl font-bold tracking-wider md:text-5xl">
+        Tolga Topal
+      </h1>
       <ul className="hidden md:flex whitespace-nowrap">
         <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
           <Link
@@ -37,6 +39,18 @@ const Navbar = () => {
             offset={-80}
           >
             Projects
+          </Link>
+        </li>
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
+          <Link
+            to="Skills"
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            Skills
           </Link>
         </li>
         <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
@@ -106,6 +120,19 @@ const Navbar = () => {
               offset={-80}
             >
               Projects
+            </Link>
+          </li>
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
+            {" "}
+            <Link
+              to="Skills"
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact="true"
+              offset={-80}
+            >
+              Skills
             </Link>
           </li>
           <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">

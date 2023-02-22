@@ -5,7 +5,7 @@ import { GrMapLocation } from "react-icons/gr";
 export const About = () => {
   return (
     <div id="about" className="w-full px-4 pt-8 pb-24 bg-[#F3F3F3]">
-      <h1 className="text-4xl font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
+      <h1 className="lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] font-Poppins tracking-widest">
         ABOUT ME
       </h1>
       <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#F3F3F3]">
@@ -33,7 +33,7 @@ export const About = () => {
             </p>
           </div>
         </div>
-        <p className="bg-[#F3F3F3] lg:text-3xl text-xl  text-center p-8 md:p-0 md:text-left">
+        <p className="bg-[#F3F3F3] lg:text-3xl sm:text-xl md:text-2xl  text-center p-8 md:p-0 md:text-left lg:tracking-widest">
           I'm Tolga Topal aka{" "}
           <a
             href="https://github.com/Torsoto"
