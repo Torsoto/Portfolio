@@ -5,7 +5,7 @@ const Contact = () => {
       id="contact"
       className="lg:p-8 p-4 bg-[#1d1e26]  grid grid-row-3 w-full"
     >
-      <h1 className="sm:text-2xl font-bold text-white lg:text-4xl font-Poppins  text-center bg-[#1d1e26] tracking-widest">
+      <h1 className="text-3xl font-bold text-white lg:text-4xl font-Poppins  text-center bg-[#1d1e26] tracking-widest">
         CONTACT
       </h1>
       <div className="grid text-white grid-col-3 bg-[#1d1e26] place-content-center">

@@ -5,15 +5,7 @@ import logo from "../components/images/favicon.png";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-[#0d0e11] py-4 px-4 mx-auto flex flex-col items-center justify-center text-white">
-      <div className="flex items-center justify-center gap-2 bg-[#0d0e11]">
-        <img
-          src={logo}
-          alt="Profile Logo"
-          width={40}
-          className="bg-[#0d0e11]"
-        />
-      </div>
+    <div className="w-full bg-[#0d0e11] pb-4 pt-2 px-4 mx-auto flex flex-col items-center justify-center text-white">
       <div className="flex items-center justify-center gap-6 mt-2 bg-[#0d0e11]">
         <a
           href="https://github.com/Torsoto"
@@ -26,6 +18,14 @@ const Footer = () => {
             className="bg-[#0d0e11] hover:scale-125 transition-all duration-300 ease-in-out"
           />
         </a>
+        <div className="flex items-center justify-center gap-2 bg-[#0d0e11]">
+          <img
+            src={logo}
+            alt="Profile Logo"
+            width={40}
+            className="bg-[#0d0e11]"
+          />
+        </div>
         <a
           href="https://www.linkedin.com/in/tolga-topal-6171ab262/"
           target={"_blank"}
