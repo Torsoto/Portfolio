@@ -12,11 +12,9 @@ const Skills = () => {
   const { ref, inView } = useInView();
   return (
     <div className="w-full bg-[#F3F3F3]">
-      <div ref={ref} className={inView ? "animate-fadeIn" : ""}>
-        <h1 className="pt-8 pb-4 lg:text-4xl text-3xl tracking-widest font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
-          SKILLS
-        </h1>
-      </div>
+      <h1 className="pt-8 pb-4 lg:text-4xl text-3xl tracking-widest font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
+        SKILLS
+      </h1>
       <div></div>
       <div
         ref={ref}

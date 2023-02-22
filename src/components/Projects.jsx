@@ -7,7 +7,7 @@ const Projects = () => {
 
   return (
     <div id="projects" className="bg-[#1d1e26] pt-20 pb-60 text-white">
-      <div ref={ref} className={inView ? "fadeUp" : ""}>
+      <div ref={ref} className={inView ? "" : ""}>
         <h1 className="font-bold font-Poppins lg:text-4xl text-3xl text-center bg-[#1d1e26] tracking-widest">
           PROJECTS
         </h1>

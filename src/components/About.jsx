@@ -6,14 +6,10 @@ import { useInView } from "react-intersection-observer";
 export const About = () => {
   const { ref, inView } = useInView();
   return (
-    <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#F3F3F3]">
+    <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#F3F3F3] z-0">
       <h1
         ref={ref}
-        className={
-          inView
-            ? "fadeUp lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] font-Poppins tracking-widest"
-            : "lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] font-Poppins tracking-widest"
-        }
+        className="fadeUp lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] font-Poppins tracking-widest"
       >
         ABOUT ME
       </h1>
@@ -21,13 +17,15 @@ export const About = () => {
         <div
           ref={ref}
           className={
-            inView ? "fadeLeft bg-[#F3F3F3] relative" : "bg-[#F3F3F3] relative"
+            inView
+              ? "lg:fadeLeft fadeUp bg-[#F3F3F3] relative"
+              : "bg-[#F3F3F3] relative"
           }
         >
           <img
             src={profile}
             alt="ME"
-            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-2xl  w-96 rounded-sm fadeLeft"
+            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-2xl z-0 w-96 rounded-sm fadeLeft"
           ></img>
           <div className="absolute left-0 right-0 z-10 text-center bg-white bottom-3">
             <p className="inline-flex items-center font-mono font-bold text-black bg-white">
@@ -47,7 +45,7 @@ export const About = () => {
             </p>
           </div>
         </div>
-        <div ref={ref} className={inView ? "fadeRight" : ""}>
+        <div ref={ref} className={inView ? "lg:fadeRight fadeDown" : ""}>
           <p className="bg-[#F3F3F3] lg:text-3xl sm:text-xl md:text-2xl  text-center p-8 md:p-0 md:text-left lg:tracking-widest">
             I'm Tolga Topal aka{" "}
             <a

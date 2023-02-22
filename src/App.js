@@ -11,7 +11,7 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div>
-      <div className="motion-safe:animate-fadeIn">
+      <div className="z-20 motion-safe:animate-fadeIn">
         <Navbar />
       </div>
       <div className="motion-safe:animate-fadeIn pb-96">

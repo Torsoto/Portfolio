@@ -82,6 +82,7 @@ body {
     opacity: 1;
     transform: translateX(0);
     filter: blur(0);
+    z-index: 0;
   }
 }
 
@@ -94,13 +95,14 @@ body {
 @keyframes fade-in-Up {
   from {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-10vh);
     filter: blur(5px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+    z-index: 0;
   }
 }
 
@@ -120,5 +122,6 @@ body {
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+    z-index: 0;
   }
 }

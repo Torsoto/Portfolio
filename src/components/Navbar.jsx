@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between h-24 px-4 max-w-[1600px] mx-auto text-white">
       <img src={logo} alt="Profile Logo" width={40} className="mr-2"></img>
-      <h1 className="w-full text-4xl font-bold tracking-wider md:text-5xl">
+      <h1 className="w-full text-3xl font-bold tracking-wider md:text-5xl">
         Tolga Topal
       </h1>
       <ul className="hidden md:flex whitespace-nowrap">
@@ -87,8 +87,8 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[65%] border-r border-r-gray-900 h-full ease-in-out duration-500 z-50 "
-            : "fixed left-[-100%]"
+            ? "fixed left-0 top-0 w-[65%] border-r border-r-gray-900 h-full ease-in-out duration-500 z-50"
+            : "fixed left-[-100%] z-50"
         }
       >
         <div className="flex ml-4 mt-7">

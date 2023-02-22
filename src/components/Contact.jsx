@@ -8,11 +8,10 @@ const Contact = () => {
       id="contact"
       className="lg:p-8 p-4 bg-[#1d1e26]  grid grid-row-3 w-full"
     >
-      <div ref={ref} className={inView ? "fadeUp" : ""}>
-        <h1 className="text-3xl font-bold text-white lg:text-4xl font-Poppins  text-center bg-[#1d1e26] tracking-widest">
-          CONTACT
-        </h1>
-      </div>
+      <h1 className="text-3xl font-bold text-white lg:text-4xl font-Poppins  text-center bg-[#1d1e26] tracking-widest">
+        CONTACT
+      </h1>
+
       <div ref={ref} className={inView ? "fadeDown" : ""}>
         <div className="grid text-white grid-col-3 bg-[#1d1e26] place-content-center">
           <div className="bg-[#1d1e26]  ">
