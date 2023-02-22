@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.eb079386.css",
-    "main.js": "/Portfolio/static/js/main.5d826a70.js",
+    "main.css": "/Portfolio/static/css/main.f244a394.css",
+    "main.js": "/Portfolio/static/js/main.0427047a.js",
     "static/media/2.jpg": "/Portfolio/static/media/2.84a87c619202c0566a7b.jpg",
     "static/media/profile1.jpg": "/Portfolio/static/media/profile1.ae5292e9efcd07e6afa7.jpg",
     "static/media/Montserrat-Regular.otf": "/Portfolio/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
@@ -9,11 +9,11 @@
     "static/media/Poppins-Regular.ttf": "/Portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/LUFFYNR1.jpg": "/Portfolio/static/media/LUFFYNR1.e7662803dd4666fbf8d2.jpg",
     "index.html": "/Portfolio/index.html",
-    "main.eb079386.css.map": "/Portfolio/static/css/main.eb079386.css.map",
-    "main.5d826a70.js.map": "/Portfolio/static/js/main.5d826a70.js.map"
+    "main.f244a394.css.map": "/Portfolio/static/css/main.f244a394.css.map",
+    "main.0427047a.js.map": "/Portfolio/static/js/main.0427047a.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb079386.css",
-    "static/js/main.5d826a70.js"
+    "static/css/main.f244a394.css",
+    "static/js/main.0427047a.js"
   ]
 }
