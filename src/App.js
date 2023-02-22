@@ -11,12 +11,18 @@ import Skills from "./components/Skills";
 function App() {
   return (
     <div>
-      <Navbar />
-      <Hero />
+      <div className="motion-safe:animate-fadeIn">
+        <Navbar />
+      </div>
+      <div className="motion-safe:animate-fadeIn pb-96">
+        <Hero />
+      </div>
       <About />
       <Projects />
       <Skills />
-      <Expierence />
+      <div className="hidden">
+        <Expierence />
+      </div>
       <Contact />
       <Footer />
     </div>

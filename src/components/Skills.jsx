@@ -6,16 +6,26 @@ import javascript from "./images/logos/javascript.png";
 import python from "./images/logos/python.png";
 import react from "./images/logos/react.png";
 import tailwind from "./images/logos/tailwind.png";
+import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
+  const { ref, inView } = useInView();
   return (
     <div className="w-full bg-[#F3F3F3]">
-      <h1 className="pt-8 pb-4 lg:text-4xl text-3xl tracking-widest font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
-        SKILLS
-      </h1>
+      <div ref={ref} className={inView ? "animate-fadeIn" : ""}>
+        <h1 className="pt-8 pb-4 lg:text-4xl text-3xl tracking-widest font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
+          SKILLS
+        </h1>
+      </div>
+      <div></div>
       <div
+        ref={ref}
         id="Skills"
-        className="w-full py-16 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto"
+        className={
+          inView
+            ? "fadeLeft w-full py-16 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto"
+            : "w-full py-16 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto"
+        }
       >
         <ul className="flex justify-evenly bg-[#F3F3F3] pb-12">
           <li className="bg-[#F3F3F3]">

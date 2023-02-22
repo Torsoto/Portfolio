@@ -4,7 +4,7 @@ import Luffy from "../components/images/LUFFYNR1.jpg";
 
 function Hero() {
   return (
-    <div className="text-white">
+    <div className="pt-16 text-white">
       <div className="flex flex-col justify-center mx-auto text-2xl text-center h-[40rem] md:text-4xl">
         <img
           src={Luffy}

@@ -53,7 +53,7 @@ const Navbar = () => {
             Skills
           </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px] hidden">
           <Link
             to="Expierence"
             smooth={true}
@@ -79,7 +79,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div
-        className="fixed  border-[7px] border-[#1d1e26] rounded-full cursor-pointer right-4 md:hidden hover:scale-110"
+        className="fixed z-10 border-[7px] border-[#1d1e26] rounded-full cursor-pointer right-4 md:hidden hover:scale-110"
         onClick={handleNav}
       >
         {nav ? <AiOutlineClose size={26} /> : <AiOutlineMenu size={26} />}
@@ -135,7 +135,7 @@ const Navbar = () => {
               Skills
             </Link>
           </li>
-          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
+          <li className="hidden p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
             <Link
               to="Expierence"
               smooth={true}

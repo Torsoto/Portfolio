@@ -46,3 +46,79 @@ body {
 .animate-wave {
   animation: wave 2s infinite;
 }
+
+.fadeRight {
+  animation-name: fade-in-right;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.fadeLeft {
+  animation-name: fade-in-left;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+.fadeUp {
+  animation-name: fade-in-Up;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fade-in-Up {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.fadeDown {
+  animation-name: fade-in-Down;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes fade-in-Down {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
