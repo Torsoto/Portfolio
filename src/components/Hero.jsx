@@ -17,7 +17,7 @@ function Hero() {
           <span className="inline-block p-2 rounded-full animate-wave">👋</span>
           I'M
         </p>
-        <h1 className="p-4 text-5xl font-extrabold tracking-wide md:text-8xl sm:text-6xl font-Poppins">
+        <h1 className="p-4 text-5xl font-extrabold tracking-wide md:text-7xl sm:text-6xl font-Poppins">
           <Typed
             strings={["TOLGA TOPAL ", "TORSOTO", "Tolga Topal", "Torsoto"]}
             typeSpeed={60}

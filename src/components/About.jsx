@@ -25,11 +25,11 @@ export const About = () => {
           <img
             src={profile}
             alt="ME"
-            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-2xl z-0 w-[550px] fadeLeft rounded-2xl"
+            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-2xl z-0 w-[420px] fadeLeft rounded-2xl"
           ></img>
           <div className="absolute left-0 right-0 z-10 pt-4 text-center bg-white bottom-3">
             <p className="inline-flex items-center font-mono font-bold text-black bg-white">
-              <span className="pt-1 mr-4 text-xl bg-white lg:text-2xl font-Montserrat">
+              <span className="pt-1 mr-4 text-xl bg-white lg:text-xl font-Montserrat">
                 ME IN PRAGUE
               </span>
               <a
@@ -38,7 +38,7 @@ export const About = () => {
               >
                 <GrMapLocation
                   size={25}
-                  className="transition-all duration-200 ease-in-out bg-white hover:scale-110 md:w-8 md:h-8"
+                  className="transition-all duration-200 ease-in-out bg-white hover:scale-110 md:w-6 md:h-6"
                   target="_blank"
                 />
               </a>
@@ -49,7 +49,7 @@ export const About = () => {
           ref={ref}
           className={inView ? "lg:fadeRight fadeDown bg-[#F3F3F3]" : ""}
         >
-          <p className="bg-[#F3F3F3] font-Poppins text-xl md:text-2xl lg:text-3xl text-center mx-4 p-8 md:p-0 md:text-left lg:tracking-widest">
+          <p className="bg-[#F3F3F3] font-Poppins text-lg md:text-xl lg:text-2xl text-center mx-4 p-8 md:p-0 md:text-left lg:tracking-widest">
             I'm Tolga Topal aka{" "}
             <a
               href="https://github.com/Torsoto"
