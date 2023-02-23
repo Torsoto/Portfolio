@@ -9,7 +9,7 @@ export const About = () => {
     <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#F3F3F3] z-0">
       <h1
         ref={ref}
-        className="fadeUp lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] font-Poppins tracking-widest"
+        className="fadeUp lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] tracking-widest"
       >
         ABOUT ME
       </h1>
@@ -18,35 +18,38 @@ export const About = () => {
           ref={ref}
           className={
             inView
-              ? "lg:fadeLeft fadeUp bg-[#F3F3F3] relative"
+              ? "lg:fadeLeft fadeUp bg-[#F3F3F3] relative "
               : "bg-[#F3F3F3] relative"
           }
         >
           <img
             src={profile}
             alt="ME"
-            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-2xl z-0 w-96 rounded-sm fadeLeft"
+            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-2xl z-0 w-[550px] fadeLeft rounded-2xl"
           ></img>
-          <div className="absolute left-0 right-0 z-10 text-center bg-white bottom-3">
+          <div className="absolute left-0 right-0 z-10 pt-4 text-center bg-white bottom-3">
             <p className="inline-flex items-center font-mono font-bold text-black bg-white">
-              <span className="mr-2 bg-white">
-                picture of me in Prague -{">"}{" "}
+              <span className="pt-1 mr-4 text-xl bg-white lg:text-2xl font-Montserrat">
+                ME IN PRAGUE
               </span>
               <a
                 href="https://www.google.com/maps/@50.0894573,14.39904,3a,75y,110.28h,82.77t/data=!3m6!1e1!3m4!1sAF1QipMqoJJKVXgNUbTWCqJahUcItL6NCD1VoBzj13rr!2e10!7i7680!8i3840"
                 title="location in photo"
               >
                 <GrMapLocation
-                  size={20}
-                  className="justify-center transition-all duration-300 ease-in-out bg-white hover:scale-125"
+                  size={25}
+                  className="transition-all duration-200 ease-in-out bg-white hover:scale-110 md:w-8 md:h-8"
                   target="_blank"
                 />
               </a>
             </p>
           </div>
         </div>
-        <div ref={ref} className={inView ? "lg:fadeRight fadeDown" : ""}>
-          <p className="bg-[#F3F3F3] lg:text-3xl sm:text-xl md:text-2xl  text-center p-8 md:p-0 md:text-left lg:tracking-widest">
+        <div
+          ref={ref}
+          className={inView ? "lg:fadeRight fadeDown bg-[#F3F3F3]" : ""}
+        >
+          <p className="bg-[#F3F3F3] font-Poppins text-xl md:text-2xl lg:text-3xl text-center mx-4 p-8 md:p-0 md:text-left lg:tracking-widest">
             I'm Tolga Topal aka{" "}
             <a
               href="https://github.com/Torsoto"
@@ -57,8 +60,10 @@ export const About = () => {
             </a>
             , a 21-year-old student.
             <br />
+            <br />
             When I'm not working out at the gym, I enjoy coding and creating
             useful & interesting projects.
+            <br />
             <br />
             In my free time, I also love playing video games and watching
             movies/tv-series. As a learning developer with a passion for fitness

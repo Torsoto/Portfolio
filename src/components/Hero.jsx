@@ -9,7 +9,7 @@ function Hero() {
         <img
           src={Luffy}
           alt="Profile"
-          className="mx-auto rounded-full w-[70px] md:w-[100px] "
+          className="mx-auto rounded-full w-[110px] md:w-[150px] mb-8"
           title="My usual Profile-pic"
         ></img>
         <p className="tracking-widest font-Montserrat">
@@ -17,7 +17,7 @@ function Hero() {
           <span className="inline-block p-2 rounded-full animate-wave">👋</span>
           I'M
         </p>
-        <h1 className="p-4 text-5xl font-extrabold tracking-wide md:text-7xl sm:text-5xl font-Poppins">
+        <h1 className="p-4 text-5xl font-extrabold tracking-wide md:text-8xl sm:text-6xl font-Poppins">
           <Typed
             strings={["TOLGA TOPAL ", "TORSOTO", "Tolga Topal", "Torsoto"]}
             typeSpeed={60}
