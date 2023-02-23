@@ -21,35 +21,56 @@ const Skills = () => {
         id="Skills"
         className={
           inView
-            ? "fadeLeft w-full py-16 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto"
+            ? "fadeLeft w-full py-24 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto"
             : "w-full py-16 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto"
         }
       >
-        <ul className="flex justify-evenly bg-[#F3F3F3] pb-12">
-          <li className="bg-[#F3F3F3]">
-            <img src={html} alt="html logo" className="bg-[#F3F3F3] h-32" />
+        <ul className="flex justify-evenly flex-wrap bg-[#F3F3F3] pb-12">
+          <li className="">
+            <img
+              title="HTML5 Logo"
+              src={html}
+              alt="html logo"
+              className="bg-[#F3F3F3] h-32"
+            />
+            <p className="text-center bg-[#F3F3F3] tracking-tighter text-2xl">
+              HTML
+            </p>
           </li>
-          <li className="bg-[#F3F3F3]">
-            <img src={css} alt="html logo" className="bg-[#F3F3F3] h-32" />
+          <li className="">
+            <img
+              src={css}
+              title="CSS3 Logo"
+              alt="html logo"
+              className="bg-[#F3F3F3] h-32 "
+            />
+            <p className="text-center bg-[#F3F3F3] tracking-tighter text-2xl">
+              CSS
+            </p>
           </li>
           <li className="bg-[#F3F3F3] w-[8rem]">
             <img
               src={javascript}
               alt="javascript logo"
-              className="bg-[#F3F3F3] h-[6.5rem] mt-[0.8rem] w-[4.8rem] md:w-[5.9rem] lg:w-[5.9rem] mx-auto"
+              className="bg-[#F3F3F3] h-[6.5rem] mt-[0.8rem] w-[5.8rem] mx-auto"
             />
+            <p className="text-center bg-[#F3F3F3] text-2xl">Javascript</p>
           </li>
-          <li className="bg-[#F3F3F3]">
+          <li className="">
             <img src={java} alt="html logo" className="bg-[#F3F3F3] h-32" />
+            <p className="text-center bg-[#F3F3F3] text-2xl">Java</p>
           </li>
-          <li className="bg-[#F3F3F3]">
+          <li className="">
             <img src={python} alt="html logo" className="bg-[#F3F3F3] h-32" />
+            <p className="text-center bg-[#F3F3F3] text-2xl">Python</p>
           </li>
-          <li className="bg-[#F3F3F3]">
+          <li className="">
             <img src={react} alt="html logo" className="bg-[#F3F3F3] h-32" />
+            <p className="text-center bg-[#F3F3F3] text-2xl">React</p>
           </li>
           <li className="bg-[#F3F3F3]">
             <img src={tailwind} alt="html logo" className="bg-[#F3F3F3] h-32" />
+            <p className="text-center bg-[#F3F3F3] text-2xl">Tailwind CSS</p>
           </li>
         </ul>
       </div>

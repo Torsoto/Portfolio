@@ -9,16 +9,12 @@ const Contact = () => {
       className="lg:p-8 p-4 bg-[#1d1e26]  grid grid-row-3 w-full"
     >
       <h1 className="text-3xl font-bold text-white lg:text-4xl font-Poppins  text-center bg-[#1d1e26] tracking-widest">
-        CONTACT
+        CONTACT ME
       </h1>
 
       <div ref={ref} className={inView ? "fadeDown" : ""}>
-        <div className="grid text-white grid-col-3 bg-[#1d1e26] place-content-center">
-          <div className="bg-[#1d1e26]  ">
-            <p className="text-white lg:text-xl md:text-xl sm:text-[16px] font-mono pt-6 lg:whitespace-nowrap md:whitespace-nowrap bg-[#1d1e26]">
-              Write me a message and i will get in touch with you as soon as i
-              can 👍
-            </p>
+        <div className="mx-auto text-white grid-col-3 bg-[#1d1e26] xl:w-[35%] lg:w-[45%] md:w-[60%] w-[80%]">
+          <div className="bg-[#1d1e26]">
             <ul className="grid gap-2 pt-4 bg-[#1d1e26] ">
               <p className="bg-[#1d1e26]">Name</p>
               <li className="bg-[#1d1e26]">
