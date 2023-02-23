@@ -54,7 +54,9 @@ const Skills = () => {
               alt="javascript logo"
               className="bg-[#F3F3F3] h-[6.5rem] mt-[0.8rem] w-[5.8rem] mx-auto"
             />
-            <p className="text-center bg-[#F3F3F3] text-2xl">Javascript</p>
+            <p className="text-center bg-[#F3F3F3] text-2xl translate-y-[10px]">
+              Javascript
+            </p>
           </li>
           <li className="">
             <img src={java} alt="html logo" className="bg-[#F3F3F3] h-32" />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import p1 from "./images/Project1/2.jpg";
 import { useInView } from "react-intersection-observer";
 
