@@ -2,7 +2,9 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
   return (
     <div
       id="contact"

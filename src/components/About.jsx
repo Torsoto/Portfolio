@@ -1,16 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import profile from "./images/profile1.jpg";
 import { GrMapLocation } from "react-icons/gr";
 import { useInView } from "react-intersection-observer";
 
 export const About = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
+
   return (
     <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#F3F3F3] z-0">
-      <h1
-        ref={ref}
-        className="fadeUp lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] tracking-widest"
-      >
+      <h1 className="fadeUp lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] tracking-widest">
         ABOUT ME
       </h1>
       <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#F3F3F3]">
@@ -18,7 +18,7 @@ export const About = () => {
           ref={ref}
           className={
             inView
-              ? "lg:fadeLeft fadeUp bg-[#F3F3F3] relative "
+              ? "lg:fadeLeft fadeUp bg-[#F3F3F3] relative"
               : "bg-[#F3F3F3] relative"
           }
         >

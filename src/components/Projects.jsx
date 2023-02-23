@@ -3,11 +3,13 @@ import p1 from "./images/Project1/2.jpg";
 import { useInView } from "react-intersection-observer";
 
 const Projects = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+  });
 
   return (
     <div id="projects" className="bg-[#1d1e26] pt-20 pb-60 text-white">
-      <div ref={ref} className={inView ? "" : ""}>
+      <div>
         <h1 className="font-bold font-Poppins lg:text-4xl text-3xl text-center bg-[#1d1e26] tracking-widest">
           PROJECTS
         </h1>

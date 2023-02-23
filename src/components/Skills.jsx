@@ -9,7 +9,10 @@ import tailwind from "./images/logos/tailwind.png";
 import { useInView } from "react-intersection-observer";
 
 const Skills = () => {
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    delay: 5,
+  });
   return (
     <div className="w-full bg-[#F3F3F3]">
       <h1 className="pt-8 pb-4 lg:text-4xl text-3xl tracking-widest font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
@@ -51,7 +54,8 @@ const Skills = () => {
           <li className="bg-[#F3F3F3] w-[8rem]">
             <img
               src={javascript}
-              alt="javascript logo"
+              title="Javascript Logo"
+              alt="Javascript Logo"
               className="bg-[#F3F3F3] h-[6.5rem] mt-[0.8rem] w-[5.8rem] mx-auto"
             />
             <p className="text-center bg-[#F3F3F3] text-2xl translate-y-[10px]">
@@ -59,19 +63,39 @@ const Skills = () => {
             </p>
           </li>
           <li className="">
-            <img src={java} alt="html logo" className="bg-[#F3F3F3] h-32" />
+            <img
+              src={java}
+              alt="Java Logo"
+              title="Java Logo"
+              className="bg-[#F3F3F3] h-32"
+            />
             <p className="text-center bg-[#F3F3F3] text-2xl">Java</p>
           </li>
           <li className="">
-            <img src={python} alt="html logo" className="bg-[#F3F3F3] h-32" />
+            <img
+              src={python}
+              alt="python logo"
+              title="Python Logo"
+              className="bg-[#F3F3F3] h-32"
+            />
             <p className="text-center bg-[#F3F3F3] text-2xl">Python</p>
           </li>
           <li className="">
-            <img src={react} alt="html logo" className="bg-[#F3F3F3] h-32" />
+            <img
+              src={react}
+              alt="React Logo"
+              title="React Logo"
+              className="bg-[#F3F3F3] h-32"
+            />
             <p className="text-center bg-[#F3F3F3] text-2xl">React</p>
           </li>
           <li className="bg-[#F3F3F3]">
-            <img src={tailwind} alt="html logo" className="bg-[#F3F3F3] h-32" />
+            <img
+              src={tailwind}
+              alt="Tailwind CSS Logo"
+              title="Tailwind CSS Logo"
+              className="bg-[#F3F3F3] h-32"
+            />
             <p className="text-center bg-[#F3F3F3] text-2xl">Tailwind CSS</p>
           </li>
         </ul>
