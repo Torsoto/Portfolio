@@ -11,7 +11,6 @@ import { useInView } from "react-intersection-observer";
 const Skills = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    delay: 5,
   });
   return (
     <div className="w-full bg-[#F3F3F3]">
