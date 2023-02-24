@@ -39,8 +39,10 @@ const Footer = () => {
         </a>
       </div>
       <div className="bg-[#0d0e11]">
-        <p className="bg-[#0d0e11] mt-2 text-center">©Torsoto 2023</p>
-        <p className="bg-[#0d0e11] text-gray-500 flex gap-2">
+        <p className="bg-[#0d0e11]  mt-2 text-center">
+          Copryright © Tolga Topal
+        </p>
+        <p className="bg-[#0d0e11] text-gray-500 flex gap-2 place-content-center">
           created with{" "}
           <FaReact
             size={24}
