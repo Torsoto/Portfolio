@@ -31,7 +31,7 @@ const M1 = ({ visible, onClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="px-2 pb-4 text-black bg-white rounded max-w-[1200px] w-[90%] sm:h-[75%] md:w-full md:h-[90%] lg:h-full max-h-[92%] fadeIn"
+        className="px-2 pb-4 text-black bg-white rounded max-w-[1200px] w-[90%] sm:h-[80%] md:w-full md:h-[90%] lg:h-full  lg:max-h-[90%] fadeIn"
       >
         <div className="flex justify-end pt-1 pb-2 mt-0 align-top bg-white">
           <button
@@ -48,7 +48,7 @@ const M1 = ({ visible, onClose }) => {
                 <img
                   src={s}
                   alt="Login Page"
-                  className="flex-shrink-0 w-full border-black rounded-x"
+                  className="flex-shrink-0 w-full border-black rounded-xl"
                 />
               )),
               <video src={V1} autoPlay muted loop playsInline />,
@@ -74,7 +74,8 @@ const M1 = ({ visible, onClose }) => {
               alt="Link to Project Repository"
               target={"_blank"}
               rel="noreferrer"
-              className="transition-all duration-100 ease-out bg-white hover:text-violet-500"
+              className="transition-all duration-100 ease-out bg-white"
+              title="Github-Repo"
             >
               <FaGithubSquare
                 size={30}
@@ -91,14 +92,24 @@ const M1 = ({ visible, onClose }) => {
             experience, and we gained many insights into software development.
           </p>
         </div>
-        <div className="mx-auto pt-4 md:pt-4 bg-white h-[80px] place-content-center flex gap-4 text-center ">
+        <div className=" bg-white h-[100px] place-content-center pt-4 lg:pt-6 flex gap-4 text-center ">
           <div className="bg-white ">
-            <img src={Java} alt="JavaFX Logo" className="bg-white" />
-            <p className="text-xs bg-white md:text-base">JavaFX</p>
+            <img
+              src={Java}
+              alt="JavaFX Logo"
+              className="mx-auto bg-white w-[30px] h-[30px] lg:w-[48px] lg:h-[48px]"
+            />
+            <p className="text-xs lg:text-[16px] bg-white md:text-base">
+              JavaFX
+            </p>
           </div>
           <div className="bg-white">
-            <img src={JSON} alt="JSON Logo" className="bg-white" />
-            <p className="text-[11px] bg-white md:text-base">JSON</p>
+            <img
+              src={JSON}
+              alt="JSON Logo"
+              className="bg-white w-[30px] h-[30px] lg:w-[48px] lg:h-[48px]"
+            />
+            <p className="text-xs lg:text-[16px] bg-white md:text-base">JSON</p>
           </div>
         </div>
       </div>
