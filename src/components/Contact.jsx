@@ -16,7 +16,10 @@ const Contact = () => {
       <div ref={ref} className={inView ? "fadeDown" : ""}>
         <div className="mx-auto text-white grid-col-3 bg-[#1d1e26] xl:w-[35%] lg:w-[45%] md:w-[60%] w-[80%]">
           <div className="bg-[#1d1e26]">
-            <form action="https://formsubmit.co/el/figeze" method="POST">
+            <form
+              action="https://formsubmit.co/torsoto54@gmail.com"
+              method="POST"
+            >
               <ul className="grid gap-2 pt-4 bg-[#1d1e26] ">
                 <p className="bg-[#1d1e26]">Name</p>
                 <li className="bg-[#1d1e26]">
