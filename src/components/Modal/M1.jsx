@@ -51,15 +51,15 @@ const M1 = ({ visible, onClose }) => {
                   className="flex-shrink-0 w-full border-black rounded-x"
                 />
               )),
-              <video src={V1} autoPlay muted loop />,
-              <video src={V2} autoPlay muted loop />,
-              <video src={V3} autoPlay muted loop />,
-              <video src={V4} autoPlay muted loop />,
-              <video src={V5} autoPlay muted loop />,
-              <video src={V6} autoPlay muted loop />,
-              <video src={V7} autoPlay muted loop />,
-              <video src={V8} autoPlay muted loop />,
-              <video src={V9} autoPlay muted loop />,
+              <video src={V1} autoPlay muted loop playsInline />,
+              <video src={V2} autoPlay muted loop playsInline />,
+              <video src={V3} autoPlay muted loop playsInline />,
+              <video src={V4} autoPlay muted loop playsInline />,
+              <video src={V5} autoPlay muted loop playsInline />,
+              <video src={V6} autoPlay muted loop playsInline />,
+              <video src={V7} autoPlay muted loop playsInline />,
+              <video src={V8} autoPlay muted loop playsInline />,
+              <video src={V9} autoPlay muted loop playsInline />,
             ]}
           </Carousel>
         </div>
