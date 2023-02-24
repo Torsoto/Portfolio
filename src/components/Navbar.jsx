@@ -79,7 +79,7 @@ const Navbar = () => {
         </li>
       </ul>
       <div
-        className="fixed z-10 border-[7px] border-[#1d1e26] rounded-full cursor-pointer right-4 md:hidden hover:scale-110"
+        className="fixed z-50 border-[7px] border-[#1d1e26] rounded-full cursor-pointer right-4 md:hidden hover:scale-110"
         onClick={handleNav}
       >
         {nav ? <AiOutlineClose size={26} /> : <AiOutlineMenu size={26} />}
