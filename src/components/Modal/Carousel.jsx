@@ -10,9 +10,9 @@ const Carousel = ({ children: slides }) => {
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
   return (
-    <div className="relative overflow-hidden bg-white">
+    <div className="relative overflow-hidden bg-white border-2 border-black shadow-lg border-opacity-30">
       <div
-        className="flex transition-transform duration-300 ease-out"
+        className="flex transition-transform duration-700 ease-out"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
         {slides}
@@ -20,16 +20,35 @@ const Carousel = ({ children: slides }) => {
       <div className="absolute inset-0 flex items-center justify-between p-4 bg-transparent">
         <button
           onClick={prev}
-          className="p-[5px] transition-all duration-200 ease-in-out bg-black bg-opacity-70 rounded-full shadow hover:bg-black hover:scale-110"
+          className="p-[5px] transition-all  duration-200 ease-in-out bg-black bg-opacity-70 rounded-full shadow hover:bg-black hover:scale-110 "
         >
-          <SlArrowLeft className="pr-1 text-white bg-transparent " size={40} />
+          <SlArrowLeft
+            className="pr-1 w-[16px] h-[16px] md:w-[28px] md:h-[28px] lg:w-[40px] lg:h-[40px] text-white bg-transparent"
+            size={40}
+          />
         </button>
         <button
           onClick={next}
           className="p-[5px] transition-all duration-200 ease-in-out bg-black bg-opacity-70 rounded-full shadow hover:bg-black hover:scale-110"
         >
-          <SlArrowRight className="pl-1 text-white bg-transparent" size={40} />
+          <SlArrowRight
+            className="pl-1 w-[16px] h-[16px] md:w-[28px] md:h-[28px] lg:w-[40px] lg:h-[40px] text-white bg-transparent"
+            size={40}
+          />
         </button>
+      </div>
+      <div className="absolute left-0 right-0 bg-transparent bottom-4">
+        {" "}
+        <div className="flex items-center justify-center gap-2 bg-transparent">
+          {slides.map((_, i) => (
+            <div
+              className={`
+              transition-all w-[8px] h-[8px] md:w-2 md:h-2 lg:w-3 lg:h-3 bg-black opacity-70 rounded-full
+              ${curr === i ? "p-[5px] md:p-2" : "bg-opacity-50 "}
+            `}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

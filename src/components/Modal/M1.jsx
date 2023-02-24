@@ -1,14 +1,25 @@
 import React from "react";
+
+//Icons
 import { AiFillCloseCircle } from "react-icons/ai";
+
+//Images and Videos
 import Java from "../images/logos/JavaSmall.png";
 import JSON from "../images/logos/JSON.png";
-import P1 from "../images/Project1/1.jpg";
-import P2 from "../images/Project1/2.jpg";
-import P3 from "../images/Project1/3.jpg";
-import P4 from "../images/Project1/4.jpg";
-import Carousel from "./Carousel";
+import V1 from "../videos/1.mp4";
+import V2 from "../videos/2.mp4";
+import V3 from "../videos/3.mp4";
+import V4 from "../videos/4.mp4";
+import V5 from "../videos/5.mp4";
+import V6 from "../videos/6.mp4";
+import V7 from "../videos/7.mp4";
+import V8 from "../videos/8.mp4";
+import V9 from "../videos/9.mp4";
 
-const slides = [P1, P2, P3, P4];
+import Carousel from "./Carousel";
+import { FaGithubSquare } from "react-icons/fa";
+
+const slides = [];
 
 const M1 = ({ visible, onClose }) => {
   if (!visible) return null;
@@ -16,37 +27,62 @@ const M1 = ({ visible, onClose }) => {
   return (
     <div
       onClick={() => onClose()}
-      className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm"
+      className="fixed inset-0 z-10 flex items-center justify-center bg-black bg-opacity-30 backdrop-blur-sm "
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="px-2 pb-4 text-black bg-white rounded max-w-[1200px] w-[90%] h-[80%] lg:w-full lg:h-full max-h-[800px]"
+        className="px-2 pb-4 text-black bg-white rounded max-w-[1200px] w-[90%] sm:h-[75%] md:w-full md:h-full max-h-[92%] fadeIn"
       >
-        <div className="flex justify-end pt-2 mt-0 align-top bg-white">
+        <div className="flex justify-end pt-1 pb-2 mt-0 align-top bg-white">
           <button
             onClick={onClose}
-            className="flex justify-end text-4xl text-black align-middle"
+            className="flex justify-end w-[18px] text-4xl md:w-[35px]  text-black align-middle"
           >
             <AiFillCloseCircle size={35} className="bg-white" />
           </button>
         </div>
-        <div className="mx-auto bg-white w-[65%]">
+        <div className="mx-auto bg-white md:w-[65%]">
           <Carousel>
-            {slides.map((s) => (
-              <img
-                src={s}
-                alt="Login Page"
-                className="flex-shrink-0 w-full border-2 border-black rounded-x"
-              />
-            ))}
+            {[
+              ...slides.map((s) => (
+                <img
+                  src={s}
+                  alt="Login Page"
+                  className="flex-shrink-0 w-full border-black rounded-x"
+                />
+              )),
+              <video src={V1} autoPlay muted loop />,
+              <video src={V2} autoPlay muted loop />,
+              <video src={V3} autoPlay muted loop />,
+              <video src={V4} autoPlay muted loop />,
+              <video src={V5} autoPlay muted loop />,
+              <video src={V6} autoPlay muted loop />,
+              <video src={V7} autoPlay muted loop />,
+              <video src={V8} autoPlay muted loop />,
+              <video src={V9} autoPlay muted loop />,
+            ]}
           </Carousel>
         </div>
-        <div className="px-8 pt-8 bg-white md:px-20 md:pt-10">
-          <h1 className="pb-2 text-xl bg-white md:text-3xl font-Poppins">
-            {" "}
-            Configurable Cash Register
-          </h1>
-          <p className="text-sm bg-white md:text-xl font-Montserrat">
+        <div className="px-0 pt-8 bg-white md:px-20 md:pt-10">
+          <div className="flex bg-white">
+            <h1 className="pb-1 text-base bg-white md:text-3xl font-Poppins">
+              {" "}
+              Configurable Cash Register
+            </h1>
+            <a
+              href="https://github.com/d3vote/XSolutions-Configurable-Cash-Register"
+              alt="Link to Project Repository"
+              target={"_blank"}
+              rel="noreferrer"
+              className="transition-all duration-100 ease-out bg-white hover:text-violet-500"
+            >
+              <FaGithubSquare
+                size={30}
+                className="mt-[3px] w-[18px] h-[18px] md:w-[30px] md:h-[30px] ml-2 transition-all duration-300 ease-in-out bg-white hover:scale-125"
+              />
+            </a>
+          </div>
+          <p className="text-justify bg-white text-[10px] sm:text-sm md:text-lg lg:text-xl font-Montserrat">
             In my first FH project, I built a cash register app that could be
             customized to suit various needs. Using JavaFX and JSON, our team
             created an application with multiple functionalities, including the
@@ -55,14 +91,14 @@ const M1 = ({ visible, onClose }) => {
             experience, and we gained many insights into software development.
           </p>
         </div>
-        <div className="mx-auto pt-8 bg-white h-[80px] w-[130px] flex">
-          <div className="px-2 bg-white">
+        <div className="mx-auto pt-4 md:pt-8 bg-white h-[80px] place-content-center flex gap-4 text-center ">
+          <div className="bg-white ">
             <img src={Java} alt="JavaFX Logo" className="bg-white" />
-            <p className="bg-white">JavaFX</p>
+            <p className="text-xs bg-white md:text-base">JavaFX</p>
           </div>
-          <div className="px-2 pt-[4px] bg-white">
+          <div className="bg-white">
             <img src={JSON} alt="JSON Logo" className="bg-white" />
-            <p className="bg-white">JSON</p>
+            <p className="text-[11px] bg-white md:text-base">JSON</p>
           </div>
         </div>
       </div>

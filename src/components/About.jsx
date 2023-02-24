@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import profile from "./images/profile1.jpg";
 import { GrMapLocation } from "react-icons/gr";
 import { useInView } from "react-intersection-observer";
@@ -17,17 +17,15 @@ export const About = () => {
         <div
           ref={ref}
           className={
-            inView
-              ? "fadeUp md:fadeLeft bg-[#F3F3F3] relative "
-              : "bg-[#F3F3F3] relative"
+            inView ? " bg-[#F3F3F3] relative fadeIn" : "bg-[#F3F3F3] relative"
           }
         >
           <img
             src={profile}
             alt="ME"
-            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-[#1d1e26] shadow-md md:shadow-2xl z-0 w-[420px] fadeLeft rounded-2xl"
+            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-[#1d1e26] shadow-md md:shadow-2xl z-0 w-[400px] fadeLeft rounded-2xl"
           ></img>
-          <div ref={ref} className={inView ? "fadeLeft" : ""}>
+          <div ref={ref} className={inView ? "fadeIn" : ""}>
             <div className="absolute left-0 right-0 z-10 pt-4 text-center bg-white bottom-3">
               <p className="inline-flex items-center font-mono font-bold text-black bg-white">
                 <span className="pt-1 mr-4 text-xl bg-white lg:text-xl font-Montserrat">
@@ -51,8 +49,8 @@ export const About = () => {
           ref={ref}
           className={inView ? "fadeDown bg-[#F3F3F3]" : "opacity-0"}
         >
-          <p className="bg-[#F3F3F3] font-Poppins text-lg md:text-xl lg:text-2xl text-center mx-4 p-8 md:p-0 md:text-left lg:tracking-widest">
-            I'm Tolga Topal aka{" "}
+          <p className="bg-[#F3F3F3] font-Poppins text-lg md:text-xl lg:text-[23px]  text-justify mx-4 p-8 md:p-0  lg:tracking-widest">
+            Hello I am Tolga Topal also know as{" "}
             <a
               href="https://github.com/Torsoto"
               className="bg-[#F3F3F3] text-violet-700 font-bold"
@@ -63,14 +61,17 @@ export const About = () => {
             , a 21-year-old student.
             <br />
             <br />
-            When I'm not working out at the gym, I enjoy coding and creating
-            useful & interesting projects.
+            Apart from being a fitness enthusiast who enjoys working out at the
+            gym, I also have a passion for coding and creating innovative
+            projects that are both useful and fascinating.
             <br />
             <br />
-            In my free time, I also love playing video games and watching
-            movies/tv-series. As a learning developer with a passion for fitness
-            and Tech, I am always seeking new challenges and opportunities to
-            improve my craft.
+            During my leisure time, I indulge in my other hobbies, such as
+            playing video games and watching movies or TV series. As an aspiring
+            developer who is constantly seeking new challenges, I am committed
+            to honing my craft and expanding my skillset. I believe that every
+            opportunity is a chance to improve, and I am always eager to take on
+            new ventures.
           </p>
         </div>
       </div>
