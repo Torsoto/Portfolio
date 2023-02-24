@@ -31,7 +31,7 @@ const M1 = ({ visible, onClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="px-2 pb-4 text-black bg-white rounded max-w-[1200px] w-[90%] sm:h-[75%] md:w-full md:h-full max-h-[92%] fadeIn"
+        className="px-2 pb-4 text-black bg-white rounded max-w-[1200px] w-[90%] sm:h-[75%] md:w-full md:h-[90%] lg:h-full max-h-[92%] fadeIn"
       >
         <div className="flex justify-end pt-1 pb-2 mt-0 align-top bg-white">
           <button
@@ -91,7 +91,7 @@ const M1 = ({ visible, onClose }) => {
             experience, and we gained many insights into software development.
           </p>
         </div>
-        <div className="mx-auto pt-4 md:pt-8 bg-white h-[80px] place-content-center flex gap-4 text-center ">
+        <div className="mx-auto pt-4 md:pt-4 bg-white h-[80px] place-content-center flex gap-4 text-center ">
           <div className="bg-white ">
             <img src={Java} alt="JavaFX Logo" className="bg-white" />
             <p className="text-xs bg-white md:text-base">JavaFX</p>
