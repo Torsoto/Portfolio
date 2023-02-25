@@ -87,10 +87,10 @@ const M1 = ({ visible, onClose }) => {
               />
             </a>
           </div>
-          <p className="text-justify bg-white text-[10px] sm:text-sm md:text-lg lg:text-lg font-Montserrat">
+          <p className="text-justify bg-white text-[10px] sm:text-sm md:text-lg lg:text-xl font-Montserrat">
             {isEnglish
-              ? "In my first FH project, my team and i developed a cash register application that could be customized to suit various needs. Using JavaFX , our team created an application with multiple functionalities, including the ability to retrieve old receipts(receipts get saved in a JSON file), user-friendly animations, table + user/admin system. Overall, the project was a fantastic learning experience, and we gained many insights into software development."
-              : "Bei meinem ersten Projekt an der FH haben mein Team und ich eine Kassen-Applikation entwickelt, die an verschiedene Anforderungen angepasst werden kann. Mit Hilfe von JavaFX hat unser Team eine Anwendung mit mehreren Funktionen erstellt, inklusive der Möglichkeit, alte Belege abzurufen (Belege werden in einer JSON Datei gespeichert), benutzerfreundliche Animationen sowie ein Tisch- und Benutzer-/Admin-System. Insgesamt war das Projekt eine fantastische Lernerfahrung, bei der wir viele Einblicke in die Softwareentwicklung gewonnen haben."}
+              ? "In my first FH project, my team and i developed a cash register application that could be customized to suit various needs. Using JavaFX , our team created an application with multiple functionalities, including the ability to retrieve old receipts, user-friendly animations, table + user/admin system. Additionally we used JSON to store all our login and product data. Overall, the project was a fantastic learning experience, and we gained many insights into software development."
+              : "Bei meinem ersten Projekt an der FH haben mein Team und ich eine Kassen-Applikation entwickelt, die an verschiedene Anforderungen angepasst werden kann. Mit Hilfe von JavaFX hat unser Team eine Anwendung mit mehreren Funktionen erstellt, inklusive der Möglichkeit, alte Belege abzurufen, benutzerfreundliche Animationen sowie ein Tisch- und Benutzer-/Admin-System. Zusätzlich haben wir JSON verwendet, um alle unsere Login- und Produktinformationen zu speichern. Insgesamt war das Projekt eine fantastische Lernerfahrung, bei der wir viele Einblicke in die Softwareentwicklung gewonnen haben."}
           </p>
         </div>
         <div className="flex gap-4 pt-4 text-center bg-white place-content-center lg:pt-6">
