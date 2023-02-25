@@ -61,10 +61,11 @@ export const About = () => {
               className="bg-[#F3F3F3] text-violet-700 font-bold"
               title="My Github"
             >
+              {" "}
               Torsoto
             </a>
             {isEnglish
-              ? ", a 21-year-old student."
+              ? ", a 21-year-old student at FH Campus Wien."
               : ". Ich bin 21 Jahre alt und studiere im Moment and der FH Campus Wien."}
             <br />
             <br />
