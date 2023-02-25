@@ -12,11 +12,11 @@ export const About = () => {
   });
 
   return (
-    <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#F3F3F3] z-0">
+    <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#F3F3F3] z-0 ">
       <h2 className="lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] tracking-widest">
         {isEnglish ? "ABOUT ME" : "ÜBER MICH"}
       </h2>
-      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#F3F3F3]">
+      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#F3F3F3] ">
         <div
           ref={ref}
           className={
@@ -61,16 +61,16 @@ export const About = () => {
               className="bg-[#F3F3F3] text-violet-700 font-bold"
               title="My Github"
             >
-              {isEnglish ? "Torsoto" : "Torsoto"}
+              Torsoto
             </a>
             {isEnglish
               ? ", a 21-year-old student."
-              : ". Ich bin 21 Jahre alt und studiere im Moment."}
+              : ". Ich bin 21 Jahre alt und studiere im Moment and der FH Campus Wien."}
             <br />
             <br />
             {isEnglish
               ? "Apart from being a fitness enthusiast who enjoys working out at the gym, I also have a passion for coding and creating innovative projects that are both useful and fascinating."
-              : "Ich gehe gerne ins Fitnessstudio und achte auf meine Gesundheit, aber ich habe auch eine Vorliebe für das Programmieren. Es macht mir richtig Spaß, innovative Projekte zu entwickeln, die nicht nur cool, sondern auch nützlich sind."}
+              : "Ich gehe gerne ins Fitnessstudio und achte auf meine Gesundheit. Außerdem habe ich auch eine Vorliebe fürs Programmieren. Es macht mir richtig Spaß, innovative Projekte zu entwickeln, die nicht nur interessant, sondern auch nützlich sind."}
             <br />
             <br />
             {isEnglish

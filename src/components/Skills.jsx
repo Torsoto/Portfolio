@@ -21,14 +21,13 @@ const Skills = () => {
       <h4 className="pt-8 pb-4 lg:text-4xl text-3xl tracking-widest font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
         {isEnglish ? "SKILLS" : "FÄHIGKEITEN"}
       </h4>
-      <div></div>
       <div
         ref={ref}
         id="Skills"
         className={
           inView
-            ? "fadeLeft w-full py-24 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto"
-            : "w-full py-16 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto"
+            ? "fadeLeft w-full py-24 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto "
+            : "w-full py-16 text-black bg-[#F3F3F3] max-w-[1600px] mx-auto "
         }
       >
         <ul className="flex justify-evenly flex-wrap bg-[#F3F3F3] pb-12">

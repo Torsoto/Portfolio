@@ -35,7 +35,7 @@ const M1 = ({ visible, onClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="px-2 pb-4 text-black bg-white rounded max-w-[1200px] w-[90%] sm:h-[80%] md:w-full md:h-[90%] lg:h-full  lg:max-h-[90%] fadeIn"
+        className=" p-2 text-black bg-white rounded-3xl overflow-hidden max-w-[1200px] w-[90%]  fadeIn"
       >
         <div className="flex justify-end pt-1 pb-2 mt-0 align-top bg-white">
           <button
@@ -45,7 +45,7 @@ const M1 = ({ visible, onClose }) => {
             <AiFillCloseCircle size={35} className="bg-white" />
           </button>
         </div>
-        <div className="mx-auto bg-white md:w-[65%]">
+        <div className="mx-auto bg-white md:w-[75%]">
           <Carousel>
             {[
               ...slides.map((s) => (
@@ -67,9 +67,9 @@ const M1 = ({ visible, onClose }) => {
             ]}
           </Carousel>
         </div>
-        <div className="px-0 pt-8 bg-white md:px-20 md:pt-10">
+        <div className="px-0 pt-8 bg-white md:px-10 md:pt-10">
           <div className="flex bg-white">
-            <h1 className="pb-1 text-base bg-white md:text-3xl font-Poppins">
+            <h1 className="pb-1 text-base bg-white md:text-2xl font-Poppins">
               {" "}
               Configurable Cash Register
             </h1>
@@ -87,18 +87,18 @@ const M1 = ({ visible, onClose }) => {
               />
             </a>
           </div>
-          <p className="text-justify bg-white text-[10px] sm:text-sm md:text-lg lg:text-xl font-Montserrat">
+          <p className="text-justify bg-white text-[10px] sm:text-sm md:text-lg lg:text-lg font-Montserrat">
             {isEnglish
               ? "In my first FH project, I built a cash register app that could be customized to suit various needs. Using JavaFX and JSON, our team created an application with multiple functionalities, including the ability to retrieve old receipts, user-friendly animations, table + user/admin system. Overall, the project was a fantastic learning experience, and we gained many insights into software development."
-              : "Bei meiner ersten Projektarbeit an der FH habe ich eine Kassen-App entwickelt, die an verschiedene Anforderungen angepasst werden konnte. Mit Hilfe von JavaFX und JSON hat unser Team eine Anwendung mit mehreren Funktionen erstellt, inklusive der Möglichkeit, alte Belege abzurufen, benutzerfreundliche Animationen sowie eine Tisch- und Benutzer-/Admin-Systems. Insgesamt war das Projekt eine fantastische Lernerfahrung, bei der wir viele Einblicke in die Softwareentwicklung gewonnen haben."}
+              : "Bei meinem ersten Projekt an der FH haben mein Team und ich eine Kassen-Applikation entwickelt, die an verschiedene Anforderungen bzw. Restauraunts angepasst werden kann. Mit Hilfe von JavaFX hat unser Team eine Anwendung mit mehreren Funktionen erstellt, inklusive der Möglichkeit, alte Belege abzurufen (werden in einer JSON Datei gespeichert), benutzerfreundliche Animationen sowie ein Tisch- und Benutzer-/Admin-System. Insgesamt war das Projekt eine fantastische Lernerfahrung, bei der wir viele Einblicke in die Softwareentwicklung gewonnen haben."}
           </p>
         </div>
-        <div className=" bg-white h-[100px] place-content-center pt-4 lg:pt-6 flex gap-4 text-center ">
+        <div className="flex gap-4 pt-4 text-center bg-white place-content-center lg:pt-6">
           <div className="bg-white ">
             <img
               src={Java}
               alt="JavaFX Logo"
-              className="mx-auto bg-white w-[30px] h-[30px] lg:w-[48px] lg:h-[48px]"
+              className="mx-auto bg-white w-[32px] h-[32px] lg:w-[48px] lg:h-[48px]"
             />
             <p className="text-xs lg:text-[16px] bg-white md:text-base">
               JavaFX
@@ -108,7 +108,7 @@ const M1 = ({ visible, onClose }) => {
             <img
               src={JSON}
               alt="JSON Logo"
-              className="bg-white w-[30px] h-[30px] lg:w-[48px] lg:h-[48px]"
+              className="bg-white w-[32px] h-[32px] lg:w-[48px] lg:h-[48px]"
             />
             <p className="text-xs lg:text-[16px] bg-white md:text-base">JSON</p>
           </div>
