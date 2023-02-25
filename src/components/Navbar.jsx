@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import logo from "../components/images/favicon.png";
 import { Link } from "react-scroll";
+import LanguageContext from "./Lng";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
+  const { isEnglish } = useContext(LanguageContext);
 
   const handleNav = () => {
     setNav(!nav);
@@ -26,7 +29,7 @@ const Navbar = () => {
             exact="true"
             offset={-80}
           >
-            About Me
+            {isEnglish ? "About Me" : "Über mich"}
           </Link>
         </li>
         <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
@@ -38,7 +41,7 @@ const Navbar = () => {
             exact="true"
             offset={-80}
           >
-            Projects
+            {isEnglish ? "Projects" : "Projekte"}
           </Link>
         </li>
         <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
@@ -50,7 +53,7 @@ const Navbar = () => {
             exact="true"
             offset={-80}
           >
-            Skills
+            {isEnglish ? "Skills" : "Fähigkeiten"}
           </Link>
         </li>
         <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px] hidden">
@@ -62,7 +65,7 @@ const Navbar = () => {
             exact="true"
             offset={-80}
           >
-            Expierence
+            {isEnglish ? "Expierence" : "Erfahrung"}
           </Link>
         </li>
         <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
@@ -74,7 +77,7 @@ const Navbar = () => {
             exact="true"
             offset={-80}
           >
-            Contact
+            {isEnglish ? "Contact" : "Kontakt"}
           </Link>
         </li>
       </ul>
@@ -107,7 +110,7 @@ const Navbar = () => {
               exact="true"
               offset={-80}
             >
-              About Me
+              {isEnglish ? "About Me" : "Über mich"}
             </Link>
           </li>
           <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
@@ -119,7 +122,7 @@ const Navbar = () => {
               exact="true"
               offset={-80}
             >
-              Projects
+              {isEnglish ? "Projects" : "Projekte"}
             </Link>
           </li>
           <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
@@ -132,7 +135,7 @@ const Navbar = () => {
               exact="true"
               offset={-80}
             >
-              Skills
+              {isEnglish ? "Skills" : "Fähigkeiten"}
             </Link>
           </li>
           <li className="hidden p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
@@ -144,7 +147,7 @@ const Navbar = () => {
               exact="true"
               offset={-80}
             >
-              Expierence
+              {isEnglish ? "Expierence" : "Erfahrung"}
             </Link>
           </li>
           <li className="p-4 transition-all duration-100 ease-in-out cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
@@ -156,7 +159,7 @@ const Navbar = () => {
               exact="true"
               offset={-80}
             >
-              Contact
+              {isEnglish ? "Contact" : "Kontakt"}
             </Link>
           </li>
         </ul>

@@ -1,18 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useInView } from "react-intersection-observer";
+import LanguageContext from "./Lng";
 
 const Contact = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
+
+  const { isEnglish } = useContext(LanguageContext);
+
   return (
     <div
       id="contact"
       className="lg:p-8 p-4 bg-[#1d1e26]  grid grid-row-3 w-full"
     >
-      <h1 className="text-3xl font-bold text-white lg:text-4xl font-Poppins  text-center bg-[#1d1e26] tracking-widest">
-        CONTACT ME
-      </h1>
+      <h6 className="text-3xl font-bold text-white lg:text-4xl font-Poppins  text-center bg-[#1d1e26] tracking-widest">
+        {isEnglish ? "CONTACT" : "KONTAKT"}
+      </h6>
       <div ref={ref} className={inView ? "fadeDown" : ""}>
         <div className="mx-auto text-white grid-col-3 bg-[#1d1e26] xl:w-[35%] lg:w-[45%] md:w-[60%] w-[80%]">
           <div className="bg-[#1d1e26]">
@@ -23,7 +27,7 @@ const Contact = () => {
                   <input
                     required
                     type="text"
-                    name="name"
+                    name="Name"
                     placeholder="Name"
                     className="text-white w-full h-[50px] text-xl p-2 appearance-none border outline-none focus:outline-none bg-[#1d1e26] rounded-lg focus:bg-[#16161b] "
                   />
@@ -33,22 +37,26 @@ const Contact = () => {
                   <input
                     required
                     type="email"
-                    name="email"
+                    name="Email"
                     placeholder="Email"
                     className="text-white w-full h-[50px] text-xl p-2 appearance-none border outline-none focus:outline-none bg-[#1d1e26] rounded-lg focus:bg-[#16161b]"
                   />
                 </li>
-                <p className="bg-[#1d1e26]">Subject</p>
+                <p className="bg-[#1d1e26]">
+                  {isEnglish ? "Subject" : "Betreff"}
+                </p>
                 <li>
                   <input
                     required
                     type="text"
                     name="Subject"
-                    placeholder="Subject"
+                    placeholder={isEnglish ? "Subject" : "Betreff"}
                     className="text-white w-full h-[50px] text-xl p-2 appearance-none border outline-none focus:outline-none bg-[#1d1e26] rounded-lg focus:bg-[#16161b]"
                   />
                 </li>
-                <p className="bg-[#1d1e26]">Message</p>
+                <p className="bg-[#1d1e26]">
+                  {isEnglish ? "Message" : "Nachricht"}
+                </p>
                 <li>
                   <textarea
                     required
@@ -63,7 +71,7 @@ const Contact = () => {
                   type="sumbit"
                   className="w-40 p-3 mt-4 text-3xl text-black transition-all duration-100 ease-in-out bg-teal-300 border-b-[10px] border-teal-900 rounded hover:border-teal-900 lg:hover:scale-105 active:translate-y-1"
                 >
-                  SEND
+                  {isEnglish ? "SEND" : "SENDEN"}
                 </button>
               </div>
             </form>

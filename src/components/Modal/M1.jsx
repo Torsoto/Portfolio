@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 
 //Icons
 import { AiFillCloseCircle } from "react-icons/ai";
+import { FaGithubSquare } from "react-icons/fa";
 
 //Images and Videos
 import Java from "../images/logos/JavaSmall.png";
@@ -17,11 +18,14 @@ import V8 from "../videos/8.mp4";
 import V9 from "../videos/9.mp4";
 
 import Carousel from "./Carousel";
-import { FaGithubSquare } from "react-icons/fa";
+
+import LanguageContext from "../Lng";
 
 const slides = [];
 
 const M1 = ({ visible, onClose }) => {
+  const { isEnglish } = useContext(LanguageContext);
+
   if (!visible) return null;
 
   return (
@@ -84,12 +88,9 @@ const M1 = ({ visible, onClose }) => {
             </a>
           </div>
           <p className="text-justify bg-white text-[10px] sm:text-sm md:text-lg lg:text-xl font-Montserrat">
-            In my first FH project, I built a cash register app that could be
-            customized to suit various needs. Using JavaFX and JSON, our team
-            created an application with multiple functionalities, including the
-            ability to retrieve old receipts, user-friendly animations, table +
-            user/admin system. Overall, the project was a fantastic learning
-            experience, and we gained many insights into software development.
+            {isEnglish
+              ? "In my first FH project, I built a cash register app that could be customized to suit various needs. Using JavaFX and JSON, our team created an application with multiple functionalities, including the ability to retrieve old receipts, user-friendly animations, table + user/admin system. Overall, the project was a fantastic learning experience, and we gained many insights into software development."
+              : "Bei meiner ersten Projektarbeit an der FH habe ich eine Kassen-App entwickelt, die an verschiedene Anforderungen angepasst werden konnte. Mit Hilfe von JavaFX und JSON hat unser Team eine Anwendung mit mehreren Funktionen erstellt, inklusive der Möglichkeit, alte Belege abzurufen, benutzerfreundliche Animationen sowie eine Tisch- und Benutzer-/Admin-Systems. Insgesamt war das Projekt eine fantastische Lernerfahrung, bei der wir viele Einblicke in die Softwareentwicklung gewonnen haben."}
           </p>
         </div>
         <div className=" bg-white h-[100px] place-content-center pt-4 lg:pt-6 flex gap-4 text-center ">

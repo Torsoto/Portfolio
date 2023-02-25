@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import css from "./images/logos/css.png";
 import html from "./images/logos/html.png";
 import java from "./images/logos/java.png";
@@ -7,16 +7,20 @@ import python from "./images/logos/python.png";
 import react from "./images/logos/react.png";
 import tailwind from "./images/logos/tailwind.png";
 import { useInView } from "react-intersection-observer";
+import LanguageContext from "./Lng";
 
 const Skills = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
   });
+
+  const { isEnglish } = useContext(LanguageContext);
+
   return (
     <div className="w-full bg-[#F3F3F3]">
-      <h1 className="pt-8 pb-4 lg:text-4xl text-3xl tracking-widest font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
-        SKILLS
-      </h1>
+      <h4 className="pt-8 pb-4 lg:text-4xl text-3xl tracking-widest font-bold text-center text-black bg-[#F3F3F3] font-Poppins">
+        {isEnglish ? "SKILLS" : "FÄHIGKEITEN"}
+      </h4>
       <div></div>
       <div
         ref={ref}

@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { FaGithubSquare, FaLinkedin, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import logo from "../components/images/favicon.png";
+import LanguageContext from "./Lng";
 
 const Footer = () => {
+  const { isEnglish } = useContext(LanguageContext);
+
   return (
     <div className="w-full bg-[#0d0e11] pb-4 pt-2 px-4 mx-auto flex flex-col items-center justify-center text-white">
       <div className="flex items-center justify-center gap-6 mt-2 bg-[#0d0e11]">
@@ -43,7 +46,7 @@ const Footer = () => {
           Copryright © Tolga Topal
         </p>
         <p className="bg-[#0d0e11] text-gray-500 flex gap-2 place-content-center">
-          created with{" "}
+          {isEnglish ? "created with " : "erstellt mit "}
           <FaReact
             size={24}
             className="text-gray-500 bg-[#0d0e11]"
