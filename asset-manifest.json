@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f7325f07.css",
-    "main.js": "/Portfolio/static/js/main.7a1a18d6.js",
+    "main.css": "/Portfolio/static/css/main.64caba4f.css",
+    "main.js": "/Portfolio/static/js/main.2880f75e.js",
     "static/media/2.mp4": "/Portfolio/static/media/2.687003a562f2c11deae0.mp4",
     "static/media/4.mp4": "/Portfolio/static/media/4.793e44a4cb2f01268c6c.mp4",
     "static/media/8.mp4": "/Portfolio/static/media/8.a9c2eea0c40de4e56778.mp4",
@@ -16,15 +16,16 @@
     "static/media/Montserrat-Regular.otf": "/Portfolio/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
     "static/media/Roboto-Regular.ttf": "/Portfolio/static/media/Roboto-Regular.6bede58e856278b0f8f1.ttf",
     "static/media/Poppins-Regular.ttf": "/Portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
-    "static/media/LUFFYNR1.jpg": "/Portfolio/static/media/LUFFYNR1.e7662803dd4666fbf8d2.jpg",
     "static/media/javascript.png": "/Portfolio/static/media/javascript.8618298aa7a3f221cfc1.png",
     "static/media/react.png": "/Portfolio/static/media/react.7f810bcc50eb5be9eda3.png",
+    "static/media/UK-flag.svg": "/Portfolio/static/media/UK-flag.b655986d51a395b27c4e645a67d65b5e.svg",
     "index.html": "/Portfolio/index.html",
-    "main.f7325f07.css.map": "/Portfolio/static/css/main.f7325f07.css.map",
-    "main.7a1a18d6.js.map": "/Portfolio/static/js/main.7a1a18d6.js.map"
+    "static/media/germany-flag.svg": "/Portfolio/static/media/germany-flag.b15d4e31fc0c3964692f4720b7304fe3.svg",
+    "main.64caba4f.css.map": "/Portfolio/static/css/main.64caba4f.css.map",
+    "main.2880f75e.js.map": "/Portfolio/static/js/main.2880f75e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7325f07.css",
-    "static/js/main.7a1a18d6.js"
+    "static/css/main.64caba4f.css",
+    "static/js/main.2880f75e.js"
   ]
 }
