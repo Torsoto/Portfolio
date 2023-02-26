@@ -8,8 +8,8 @@ const Footer = () => {
   const { isEnglish } = useContext(LanguageContext);
 
   return (
-    <div className="w-full bg-[#0d0e11] pb-4 pt-2 px-4 mx-auto flex flex-col items-center justify-center text-white">
-      <div className="flex items-center justify-center gap-6 mt-2 bg-[#0d0e11]">
+    <div className="w-full bg-[#061022] pb-4 pt-2 px-4 mx-auto flex flex-col items-center justify-center text-white">
+      <div className="flex items-center justify-center gap-6 mt-2 bg-[#061022]">
         <a
           href="https://github.com/Torsoto"
           target={"_blank"}
@@ -18,15 +18,15 @@ const Footer = () => {
         >
           <FaGithubSquare
             size={36}
-            className="bg-[#0d0e11] hover:scale-125 transition-all duration-300 ease-in-out"
+            className="bg-[#061022] hover:scale-125 transition-all duration-300 ease-in-out"
           />
         </a>
-        <div className="flex items-center justify-center gap-2 bg-[#0d0e11]">
+        <div className="flex items-center justify-center gap-2 bg-[#061022]">
           <img
             src={logo}
             alt="Profile Logo"
             width={40}
-            className="bg-[#0d0e11]"
+            className="bg-[#061022]"
           />
         </div>
         <a
@@ -37,23 +37,23 @@ const Footer = () => {
         >
           <FaLinkedin
             size={36}
-            className="bg-[#0d0e11] hover:scale-125 transition-all duration-300 ease-in-out"
+            className="bg-[#061022] hover:scale-125 transition-all duration-300 ease-in-out"
           />
         </a>
       </div>
-      <div className="bg-[#0d0e11]">
-        <p className="bg-[#0d0e11]  mt-2 text-center">
+      <div className="bg-[#061022]">
+        <p className="bg-[#061022]  mt-2 text-center">
           Copryright © Tolga Topal
         </p>
-        <p className="bg-[#0d0e11] text-gray-500 flex gap-2 place-content-center">
+        <p className="bg-[#061022] text-gray-500 flex gap-2 place-content-center">
           {isEnglish ? "created with " : "erstellt mit "}
           <FaReact
             size={24}
-            className="text-gray-500 bg-[#0d0e11]"
+            className="text-gray-500 bg-[#061022]"
             title="React"
           />{" "}
           <SiTailwindcss
-            className="text-gray-500 bg-[#0d0e11]"
+            className="text-gray-500 bg-[#061022]"
             size={24}
             title="Tailwind CSS"
           />

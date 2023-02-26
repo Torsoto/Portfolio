@@ -1,60 +1,52 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import Typed from "react-typed";
-import German from "./images/svgs/germany-flag.svg";
-import England from "./images/svgs/UK-flag.svg";
+import { Link } from "react-scroll";
+
 import LanguageContext from "./Lng";
+import Design from "./images/svgs/hero.svg";
 
 function Hero() {
-  const { isEnglish, setIsEnglish } = useContext(LanguageContext);
-  const [activeImage, setActiveImage] = useState(null);
-
-  const handleClick = (isEnglish) => {
-    setIsEnglish(isEnglish);
-    setActiveImage(isEnglish ? "EN" : "DE");
-  };
+  const { isEnglish } = useContext(LanguageContext);
 
   return (
-    <div className="pt-16 text-white">
-      <div className="flex flex-col justify-center mx-auto text-2xl text-center h-[40rem] md:text-4xl">
-        <p className="tracking-widest font-Montserrat">
-          {isEnglish ? "HI THERE" : "HALLO"}
-          <span className="inline-block p-2 rounded-full animate-wave">👋</span>
-          {isEnglish ? "I'M" : "ICH BIN"}
-        </p>
-        <h1 className="p-4 text-5xl font-extrabold tracking-wide md:text-7xl sm:text-6xl font-Poppins">
-          <Typed
-            strings={["TOLGA TOPAL ", "TORSOTO", "Tolga Topal", "Torsoto"]}
-            typeSpeed={60}
-            backSpeed={150}
-            loop
-          />
-        </h1>
-        <div>
-          <p className="p-2 text-xl font-Montserrat md:text-2xl">
-            {isEnglish
-              ? "Computer Science and Digital Communications student at FH Campus Wien"
-              : "Computer Science and Digital Communications Student auf der FH Campus Wien"}
+    <div id="Home" className="pt-32 text-white lg:pt-40">
+      <div className="grid  lg:grid-cols-2 mx-auto text-2xl  md:text-4xl max-w-[1400px]">
+        <div className="order-1 pl-10 m-auto text-center lg:text-left lg:order-none">
+          <p className="">
+            {isEnglish ? "Hi There" : "Hallo"}
+            <span className="inline-block p-2 ronded-full animate-wave">
+              👋
+            </span>
+            {isEnglish ? "I'm" : "Ich bin"}
           </p>
-          <div className="flex gap-10 pt-4 place-content-center">
-            <img
-              src={German}
-              alt="flag of germany"
-              className={`max-w-[60px] lg:active:translate-y-2 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
-                activeImage === "DE" ? "opacity-100" : "opacity-40"
-              }`}
-              onClick={() => handleClick(false)}
-              style={{ opacity: isEnglish ? "0.4" : "1" }}
+          <h1 className="text-[#fe3e57] py-4 text-4xl font-extrabold tracking-wide md:text-5xl lg:text-6xl font-Poppins whitespace-nowrap ">
+            <Typed
+              strings={["TOLGA TOPAL ", "TORSOTO", "Tolga Topal", "Torsoto"]}
+              typeSpeed={60}
+              backSpeed={150}
+              loop
             />
-            <img
-              src={England}
-              alt="flag of england"
-              className={`max-w-[60px] lg:active:translate-y-2 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
-                activeImage === "EN" ? "opacity-100" : "opacity-40"
-              }`}
-              onClick={() => handleClick(true)}
-              style={{ opacity: isEnglish ? "1" : "0.4" }}
-            />
-          </div>
+          </h1>
+          <p className="text-xl md:text-2xl">
+            {isEnglish
+              ? "Computer Science and Digital Communications student"
+              : "Computer Science and Digital Communications Student"}
+          </p>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            <button className="py-3 px-4 shadow-md shadow-black mt-4 text-2xl font-bold text-white transition-all duration-100 ease-in-out bg-[#fe3e57] rounded-lg lg:hover:scale-105 active:translate-y-1">
+              {isEnglish ? "Contact Me" : "Kontakt"}
+            </button>
+          </Link>
+        </div>
+        <div className="p-8">
+          <img src={Design} alt="Hero Design" className="pl-10 " />
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import profile from "./images/Photo.png";
+import profile from "./images/profile2.jpg";
 import { useInView } from "react-intersection-observer";
 import LanguageContext from "./Lng";
 
@@ -11,40 +11,32 @@ export const About = () => {
   });
 
   return (
-    <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#F3F3F3] z-0 ">
-      <h2 className="lg:text-4xl text-3xl font-bold text-center text-black bg-[#F3F3F3] tracking-widest">
-        {isEnglish ? "ABOUT ME" : "ÜBER MICH"}
-      </h2>
-      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#F3F3F3] ">
+    <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#0d2244] z-0 ">
+      <div className=" bg-[#0d2244]">
+        <h2 className="lg:text-4xl text-3xl font-bold text-center text-[#fe3e57] bg-[#0d2244] tracking-widest">
+          {isEnglish ? "ABOUT ME" : "ÜBER MICH"}
+        </h2>
+      </div>
+      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#0d2244] ">
         <div
           ref={ref}
-          className={inView ? " bg-[#F3F3F3] fadeUp" : "bg-[#F3F3F3]"}
+          className={inView ? " bg-[#0d2244] fadeUp" : "bg-[#0d2244]"}
         >
           <img
             src={profile}
             alt="ME"
-            className="border-2 border-[#1d1e26] shadow-lg bg-transparent shadow-black z-0 w-[400px]"
+            className="shadow-lg rounded-xl bg-transparent shadow-black z-0 w-[400px]"
           ></img>
         </div>
         <div
           ref={ref}
-          className={inView ? "fadeDown bg-[#F3F3F3]" : "opacity-0"}
+          className={inView ? "fadeDown bg-[#0d2244]" : "opacity-0"}
         >
-          <p className="bg-[#F3F3F3] font-Poppins text-lg md:text-xl  lg:text-[23px] lg:leading-7 text-justify mx-4 p-8 md:p-0  lg:tracking-widest">
-            {isEnglish
-              ? "Hello I am Tolga Topal also know as"
-              : "Hey, ich bin Tolga Topal und auf den meisten Platformen nenne ich mich "}
-            <a
-              href="https://github.com/Torsoto"
-              className="bg-[#F3F3F3] text-violet-700 font-bold"
-              title="My Github"
-            >
-              {" "}
-              Torsoto
-            </a>
+          <p className="bg-[#0d2244] text-white font-Montserrat text-lg md:text-xl  lg:text-2xl text-justify mx-4 p-8 md:p-0 tracking-wide">
+            {isEnglish ? "Hello I am Tolga Topal" : "Hey, ich bin Tolga Topal,"}
             {isEnglish
               ? ", a 21-year-old student at FH Campus Wien."
-              : ". Ich bin 21 Jahre alt und studiere im Moment and der FH Campus Wien."}
+              : " bin 21 Jahre alt und studiere im Moment and der FH Campus Wien."}
             <br />
             <br />
             {isEnglish
