@@ -42,99 +42,97 @@ const Navbar = () => {
             : "fixed top-0 right-0 flex place-content-end z-50 shadow-md fadeIn overflow-hidden  shadow-black w-full pr-4 2xl:pr-44"
         }`}
       >
-        <div className="flex bg-[#17315a]">
-          <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
-            <Link
-              to="Home"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-100}
-            >
-              {isEnglish ? "Home" : "Home"}
-            </Link>
-          </li>
-          <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
-            <Link
-              to="about"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-50}
-            >
-              {isEnglish ? "About Me" : "Über mich"}
-            </Link>
-          </li>
-          <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
-            <Link
-              to="projects"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-50}
-            >
-              {isEnglish ? "Projects" : "Projekte"}
-            </Link>
-          </li>
-          <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
-            <Link
-              to="Skills"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-150}
-            >
-              {isEnglish ? "Skills" : "Fähigkeiten"}
-            </Link>
-          </li>
-          <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px] hidden">
-            <Link
-              to="Expierence"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-80}
-            >
-              {isEnglish ? "Expierence" : "Erfahrung"}
-            </Link>
-          </li>
-          <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              offset={-50}
-            >
-              {isEnglish ? "Contact" : "Kontakt"}
-            </Link>
-          </li>
-          <div className="flex gap-4 place-content-center">
-            <img
-              src={German}
-              alt="flag of germany"
-              className={`max-w-[34px] lg:active:translate-y-2 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
-                activeImage === "DE" ? "opacity-100" : "opacity-40"
-              }`}
-              onClick={() => handleClick(false)}
-              style={{ opacity: isEnglish ? "0.4" : "1" }}
-            />
-            <img
-              src={England}
-              alt="flag of england"
-              className={`max-w-[34px] lg:active:translate-y-2 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
-                activeImage === "EN" ? "opacity-100" : "opacity-40"
-              }`}
-              onClick={() => handleClick(true)}
-              style={{ opacity: isEnglish ? "1" : "0.4" }}
-            />
-          </div>
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
+          <Link
+            to="Home"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-100}
+          >
+            {isEnglish ? "Home" : "Home"}
+          </Link>
+        </li>
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-50}
+          >
+            {isEnglish ? "About Me" : "Über mich"}
+          </Link>
+        </li>
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-50}
+          >
+            {isEnglish ? "Projects" : "Projekte"}
+          </Link>
+        </li>
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
+          <Link
+            to="Skills"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-150}
+          >
+            {isEnglish ? "Skills" : "Fähigkeiten"}
+          </Link>
+        </li>
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px] hidden">
+          <Link
+            to="Expierence"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
+          >
+            {isEnglish ? "Expierence" : "Erfahrung"}
+          </Link>
+        </li>
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
+          <Link
+            to="contact"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-50}
+          >
+            {isEnglish ? "Contact" : "Kontakt"}
+          </Link>
+        </li>
+        <div className="flex gap-4 pl-4 place-content-center">
+          <img
+            src={German}
+            alt="flag of germany"
+            className={`max-w-[34px] lg:active:translate-y-2 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
+              activeImage === "DE" ? "opacity-100" : "opacity-40"
+            }`}
+            onClick={() => handleClick(false)}
+            style={{ opacity: isEnglish ? "0.4" : "1" }}
+          />
+          <img
+            src={England}
+            alt="flag of england"
+            className={`max-w-[34px] lg:active:translate-y-2 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
+              activeImage === "EN" ? "opacity-100" : "opacity-40"
+            }`}
+            onClick={() => handleClick(true)}
+            style={{ opacity: isEnglish ? "1" : "0.4" }}
+          />
         </div>
       </ul>
       <div
