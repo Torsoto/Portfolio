@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
-import profile from "./images/profile1.jpg";
-import { GrMapLocation } from "react-icons/gr";
+import profile from "./images/Photo.png";
 import { useInView } from "react-intersection-observer";
 import LanguageContext from "./Lng";
 
@@ -19,34 +18,13 @@ export const About = () => {
       <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#F3F3F3] ">
         <div
           ref={ref}
-          className={
-            inView ? " bg-[#F3F3F3] relative fadeIn" : "bg-[#F3F3F3] relative"
-          }
+          className={inView ? " bg-[#F3F3F3] fadeUp" : "bg-[#F3F3F3]"}
         >
           <img
             src={profile}
             alt="ME"
-            className="border-t-[20px] border-l-[20px] border-r-[20px] border-b-[40px] border-white shadow-[#1d1e26] shadow-md md:shadow-2xl z-0 w-[400px] fadeLeft rounded-2xl"
+            className="border-2 border-[#1d1e26] shadow-lg bg-transparent shadow-black z-0 w-[400px]"
           ></img>
-          <div ref={ref} className={inView ? "fadeIn" : ""}>
-            <div className="absolute left-0 right-0 z-10 pt-4 text-center bg-white bottom-3">
-              <p className="inline-flex items-center font-mono font-bold text-black bg-white">
-                <span className="pt-1 mr-4 text-xl bg-white lg:text-xl font-Montserrat">
-                  {isEnglish ? "ME IN PRAGUE" : "ICH IN PRAGUE"}
-                </span>
-                <a
-                  href="https://www.google.com/maps/@50.0894573,14.39904,3a,75y,110.28h,82.77t/data=!3m6!1e1!3m4!1sAF1QipMqoJJKVXgNUbTWCqJahUcItL6NCD1VoBzj13rr!2e10!7i7680!8i3840"
-                  title="location in photo"
-                >
-                  <GrMapLocation
-                    size={25}
-                    className="transition-all duration-200 ease-in-out bg-white hover:scale-110 md:w-6 md:h-6"
-                    target="_blank"
-                  />
-                </a>
-              </p>
-            </div>
-          </div>
         </div>
         <div
           ref={ref}
@@ -70,13 +48,13 @@ export const About = () => {
             <br />
             <br />
             {isEnglish
-              ? "Apart from being a fitness enthusiast who enjoys working out at the gym, I also have a passion for coding and creating innovative projects that are both useful and fascinating."
-              : "Ich gehe gerne ins Fitnessstudio und achte auf meine Gesundheit. Außerdem habe ich auch eine Vorliebe fürs Programmieren. Es macht mir richtig Spaß, innovative Projekte zu entwickeln, die nicht nur interessant, sondern auch nützlich sind."}
+              ? "Apart from being a fitness enthusiast who enjoys working out at the gym, I also have a passion for coding and creating innovative and valuable projects."
+              : "Ich gehe gerne ins Fitnessstudio und achte auf meine Gesundheit. Außerdem habe ich auch eine Vorliebe fürs Programmieren. Es macht mir richtig Spaß, innovative und nützliche Projekte zu entwickeln"}
             <br />
             <br />
             {isEnglish
-              ? "During my leisure time, I indulge in my other hobbies, such as playing video games and watching movies or TV series. As an aspiring developer who is constantly seeking new challenges, I am committed to honing my craft and expanding my skillset. I believe that every opportunity is a chance to improve, and I am always eager to take on new ventures."
-              : "In meiner Freizeit spiele ich auch gerne Videospiele oder schaue Filme und TV-Serien. Ich möchte ein richtig guter Entwickler werden und arbeite hart daran, meine Fähigkeiten zu verbessern und neue Herausforderungen anzunehmen. Ich denke, man sollte jede Chance nutzen, um dazuzulernen, und deshalb bin ich immer offen für neue Abenteuer."}
+              ? "During my leisure time, I indulge in my other hobbies, such as playing video games, going to the gym and watching movies or TV series. As an aspiring developer who is constantly seeking new challenges, I am committed to honing my craft and expanding my skillset. I believe that every opportunity is a chance to improve, and I am always eager to take on new ventures."
+              : "In meiner Freizeit spiele ich auch gerne Videospiele, gehe ins Fitnessstudio oder schaue Filme und TV-Serien. Ich möchte ein richtig guter Entwickler werden und arbeite hart daran, meine Fähigkeiten zu verbessern und neue Herausforderungen anzunehmen. Ich denke, man sollte jede Chance nutzen, um dazuzulernen, und deshalb bin ich immer offen für neue Abenteuer."}
           </p>
         </div>
       </div>

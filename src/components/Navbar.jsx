@@ -20,7 +20,7 @@ const Navbar = () => {
         Tolga Topal
       </h1>
       <ul className="hidden md:flex whitespace-nowrap">
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#30baee] text-[22px]">
           <Link
             to="about"
             smooth={true}
@@ -32,7 +32,7 @@ const Navbar = () => {
             {isEnglish ? "About Me" : "Über mich"}
           </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#30baee] text-[22px]">
           <Link
             to="projects"
             smooth={true}
@@ -44,7 +44,7 @@ const Navbar = () => {
             {isEnglish ? "Projects" : "Projekte"}
           </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#30baee] text-[22px]">
           <Link
             to="Skills"
             smooth={true}
@@ -56,7 +56,7 @@ const Navbar = () => {
             {isEnglish ? "Skills" : "Fähigkeiten"}
           </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px] hidden">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#30baee] text-[22px] hidden">
           <Link
             to="Expierence"
             smooth={true}
@@ -68,7 +68,7 @@ const Navbar = () => {
             {isEnglish ? "Expierence" : "Erfahrung"}
           </Link>
         </li>
-        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-teal-300 text-[22px]">
+        <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#30baee] text-[22px]">
           <Link
             to="contact"
             smooth={true}
@@ -101,7 +101,7 @@ const Navbar = () => {
           </h1>
         </div>
         <ul className="grid gap-1 pt-3 uppercase">
-          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#30baee] hover:font-bold hover:text-lg">
             <Link
               to="about"
               smooth={true}
@@ -113,7 +113,7 @@ const Navbar = () => {
               {isEnglish ? "About Me" : "Über mich"}
             </Link>
           </li>
-          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#30baee] hover:font-bold hover:text-lg">
             <Link
               to="projects"
               smooth={true}
@@ -125,7 +125,7 @@ const Navbar = () => {
               {isEnglish ? "Projects" : "Projekte"}
             </Link>
           </li>
-          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#30baee] hover:font-bold hover:text-lg">
             {" "}
             <Link
               to="Skills"
@@ -138,7 +138,7 @@ const Navbar = () => {
               {isEnglish ? "Skills" : "Fähigkeiten"}
             </Link>
           </li>
-          <li className="hidden p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
+          <li className="hidden p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#30baee] hover:font-bold hover:text-lg">
             <Link
               to="Expierence"
               smooth={true}
@@ -150,7 +150,7 @@ const Navbar = () => {
               {isEnglish ? "Expierence" : "Erfahrung"}
             </Link>
           </li>
-          <li className="p-4 transition-all duration-100 ease-in-out cursor-pointer hover:text-teal-300 hover:font-bold hover:text-lg">
+          <li className="p-4 transition-all duration-100 ease-in-out cursor-pointer hover:text-[#30baee] hover:font-bold hover:text-lg">
             <Link
               to="contact"
               smooth={true}
