@@ -69,7 +69,7 @@ const Contact = () => {
               <div className="grid place-items-center">
                 <button
                   type="sumbit"
-                  className="w-40 pt-2 pb-4 mt-4 text-2xl text-white transition-all duration-100 ease-in-out bg-transparent border-2 border-white rounded-lg bg-opacity-60 lg:hover:scale-105 active:translate-y-1"
+                  className="w-40 py-2 pb-3 mt-4 text-2xl text-white transition-all duration-100 ease-in-out bg-transparent border-2 border-white rounded-lg y-3 bg-opacity-60 lg:hover:scale-105 active:translate-y-1"
                 >
                   {isEnglish ? "SEND" : "SENDEN"}
                 </button>

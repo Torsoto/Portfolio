@@ -53,8 +53,8 @@ export const About = () => {
             <br />
             <br />
             {isEnglish
-              ? "During my leisure time, I indulge in my other hobbies, such as playing video games, going to the gym and watching movies or TV series. As an aspiring developer who is constantly seeking new challenges, I am committed to honing my craft and expanding my skillset. I believe that every opportunity is a chance to improve, and I am always eager to take on new ventures."
-              : "In meiner Freizeit spiele ich auch gerne Videospiele, gehe ins Fitnessstudio oder schaue Filme und TV-Serien. Ich möchte ein richtig guter Entwickler werden und arbeite hart daran, meine Fähigkeiten zu verbessern und neue Herausforderungen anzunehmen. Ich denke, man sollte jede Chance nutzen, um dazuzulernen, und deshalb bin ich immer offen für neue Abenteuer."}
+              ? "During my leisure time, I indulge in my other hobbies, such as playing video games and watching movies or TV series. As an aspiring developer who is constantly seeking new challenges, I am committed to honing my craft and expanding my skillset. I believe that every opportunity is a chance to improve, and I am always eager to take on new ventures."
+              : "In meiner Freizeit spiele ich auch gerne Videospiele oder schaue Filme und TV-Serien. Ich möchte ein richtig guter Entwickler werden und arbeite hart daran, meine Fähigkeiten zu verbessern und neue Herausforderungen anzunehmen. Ich denke, man sollte jede Chance nutzen, um dazuzulernen, und deshalb bin ich immer offen für neue Abenteuer."}
           </p>
         </div>
       </div>
