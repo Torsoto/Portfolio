@@ -35,7 +35,7 @@ const M1 = ({ visible, onClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className=" p-2 text-black bg-[#173463] rounded-3xl overflow-hidden max-w-[1200px] w-[90%]  fadeIn"
+        className=" p-2 text-black bg-[#173463] rounded-3xl overflow-hidden max-w-[1200px] w-[90%] fadeIn"
       >
         <div className="flex justify-end pt-1 pb-2 mt-0 align-top bg-[#173463]">
           <button
@@ -45,7 +45,7 @@ const M1 = ({ visible, onClose }) => {
             <AiFillCloseCircle size={35} className="bg-[#173463] text-white" />
           </button>
         </div>
-        <div className="mx-auto bg-[#173463] md:w-[75%]">
+        <div className="mx-auto bg-[#173463]  md:w-[62%]">
           <Carousel>
             {[
               ...slides.map((s) => (

@@ -11,7 +11,7 @@ function Hero() {
   return (
     <div id="Home" className="pt-32 text-white lg:pt-40">
       <div className="grid  lg:grid-cols-2 mx-auto text-2xl  md:text-4xl max-w-[1400px]">
-        <div className="order-1 pl-10 m-auto text-center lg:text-left lg:order-none">
+        <div className="order-1 m-auto text-center lg:pl-8 lg:text-left lg:order-none">
           <p className="">
             {isEnglish ? "Hi There" : "Hallo"}
             <span className="inline-block p-2 ronded-full animate-wave">
@@ -19,7 +19,7 @@ function Hero() {
             </span>
             {isEnglish ? "I'm" : "Ich bin"}
           </p>
-          <h1 className="text-[#fe3e57] py-4 text-4xl font-extrabold tracking-wide md:text-5xl lg:text-6xl font-Poppins whitespace-nowrap ">
+          <h1 className="text-[#fe3e57] py-4 text-5xl font-extrabold tracking-wide md:text-6xl lg:text-7xl font-Poppins whitespace-nowrap ">
             <Typed
               strings={["TOLGA TOPAL ", "TORSOTO", "Tolga Topal", "Torsoto"]}
               typeSpeed={60}
@@ -46,7 +46,7 @@ function Hero() {
           </Link>
         </div>
         <div className="p-8">
-          <img src={Design} alt="Hero Design" className="pl-10 " />
+          <img src={Design} alt="Hero Design" className="mx-auto" />
         </div>
       </div>
     </div>
