@@ -29,7 +29,7 @@ const Contact = () => {
                     type="text"
                     name="Name"
                     placeholder="Name"
-                    className="text-white w-full h-[50px] text-xl p-2 appearance-none border outline-none focus:outline-none bg-[#17315a] rounded-lg focus:bg-[#122444] "
+                    className="text-white w-full h-[50px] text-lg p-2 appearance-none border-none outline-none focus:outline-none bg-[#294572] rounded-md"
                   />
                 </li>
                 <p className="bg-[#17315a]">Email</p>
@@ -39,7 +39,7 @@ const Contact = () => {
                     type="email"
                     name="Email"
                     placeholder="Email"
-                    className="text-white w-full h-[50px] text-xl p-2 appearance-none border outline-none focus:outline-none bg-[#17315a] rounded-lg focus:bg-[#122444]"
+                    className="text-white w-full h-[50px] text-lg p-2 appearance-none border-none outline-none focus:outline-none bg-[#294572] rounded-md"
                   />
                 </li>
                 <p className="bg-[#17315a]">
@@ -51,7 +51,7 @@ const Contact = () => {
                     type="text"
                     name="Subject"
                     placeholder={isEnglish ? "Subject" : "Betreff"}
-                    className="text-white w-full h-[50px] text-xl p-2 appearance-none border outline-none focus:outline-none bg-[#17315a] rounded-lg focus:bg-[#122444]"
+                    className="text-white w-full h-[50px] text-lg p-2 appearance-none border-none outline-none focus:outline-none bg-[#294572] rounded-md"
                   />
                 </li>
                 <p className="bg-[#17315a]">
@@ -63,7 +63,7 @@ const Contact = () => {
                     type="textarea"
                     name="Message"
                     placeholder={isEnglish ? "Message" : "Nachricht"}
-                    className="text-white w-full p-2 appearance-none border outline-none focus:outline-none bg-[#17315a] h-[150px] rounded-lg focus:bg-[#122444]"
+                    className="text-white w-full p-2 appearance-none text-lg outline-none border-none focus:outline-none bg-[#294572] h-[150px] rounded-md"
                   />
                 </li>
               </ul>
