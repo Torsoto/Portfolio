@@ -19,6 +19,7 @@ const Footer = () => {
           <FaGithubSquare
             size={36}
             className="bg-[#061022] hover:scale-125 transition-all duration-300 ease-in-out"
+            title="Github"
           />
         </a>
         <div className="flex items-center justify-center gap-2 bg-[#061022]">
@@ -38,25 +39,27 @@ const Footer = () => {
           <FaLinkedin
             size={36}
             className="bg-[#061022] hover:scale-125 transition-all duration-300 ease-in-out"
+            title="LinkedIn"
           />
         </a>
       </div>
-      <div className="bg-[#061022]">
-        <p className="bg-[#061022]  mt-2 text-center">
-          Copryright © Tolga Topal
-        </p>
+      <div className="bg-[#061022] pt-1">
         <p className="bg-[#061022] text-gray-500 flex gap-2 place-content-center">
-          {isEnglish ? "created with " : "erstellt mit "}
+          {isEnglish ? "Made with " : "Erstellt mit "}
           <FaReact
             size={24}
             className="text-gray-500 bg-[#061022]"
             title="React"
           />{" "}
+          |
           <SiTailwindcss
             className="text-gray-500 bg-[#061022]"
             size={24}
             title="Tailwind CSS"
           />
+        </p>
+        <p className="bg-[#061022] tracking-tight text-gray-500  text-center">
+          © 2023 Tolga Topal
         </p>
       </div>
     </div>
