@@ -1,31 +1,32 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.bbfe74c4.css",
-    "main.js": "/Portfolio/static/js/main.6583840f.js",
+    "main.css": "/Portfolio/static/css/main.3424d690.css",
+    "main.js": "/Portfolio/static/js/main.443bf93a.js",
     "static/media/2.mp4": "/Portfolio/static/media/2.687003a562f2c11deae0.mp4",
     "static/media/4.mp4": "/Portfolio/static/media/4.793e44a4cb2f01268c6c.mp4",
     "static/media/8.mp4": "/Portfolio/static/media/8.a9c2eea0c40de4e56778.mp4",
     "static/media/3.mp4": "/Portfolio/static/media/3.82f321c4c7701f41ecdb.mp4",
     "static/media/9.mp4": "/Portfolio/static/media/9.2b0af10ba6f5d3359376.mp4",
     "static/media/7.mp4": "/Portfolio/static/media/7.ccbf9a83e135616b4f6f.mp4",
+    "static/media/profile2.jpg": "/Portfolio/static/media/profile2.7d831b5aea2ee0a3c365.jpg",
     "static/media/1.mp4": "/Portfolio/static/media/1.12e766c36e5755122e48.mp4",
     "static/media/5.mp4": "/Portfolio/static/media/5.fb55a284b8de26dfe549.mp4",
     "static/media/6.mp4": "/Portfolio/static/media/6.7056761d77f2b7dab9a3.mp4",
-    "static/media/Photo.png": "/Portfolio/static/media/Photo.96b93bb639f8a4c839da.png",
     "static/media/2.jpg": "/Portfolio/static/media/2.84a87c619202c0566a7b.jpg",
     "static/media/Montserrat-Regular.otf": "/Portfolio/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
     "static/media/Roboto-Regular.ttf": "/Portfolio/static/media/Roboto-Regular.6bede58e856278b0f8f1.ttf",
     "static/media/Poppins-Regular.ttf": "/Portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/hero.svg": "/Portfolio/static/media/hero.7bb68492d09d7685334c732e9649c2e0.svg",
     "static/media/javascript.png": "/Portfolio/static/media/javascript.8618298aa7a3f221cfc1.png",
     "static/media/react.png": "/Portfolio/static/media/react.7f810bcc50eb5be9eda3.png",
     "static/media/UK-flag.svg": "/Portfolio/static/media/UK-flag.b655986d51a395b27c4e645a67d65b5e.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/germany-flag.svg": "/Portfolio/static/media/germany-flag.b15d4e31fc0c3964692f4720b7304fe3.svg",
-    "main.bbfe74c4.css.map": "/Portfolio/static/css/main.bbfe74c4.css.map",
-    "main.6583840f.js.map": "/Portfolio/static/js/main.6583840f.js.map"
+    "main.3424d690.css.map": "/Portfolio/static/css/main.3424d690.css.map",
+    "main.443bf93a.js.map": "/Portfolio/static/js/main.443bf93a.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbfe74c4.css",
-    "static/js/main.6583840f.js"
+    "static/css/main.3424d690.css",
+    "static/js/main.443bf93a.js"
   ]
 }
