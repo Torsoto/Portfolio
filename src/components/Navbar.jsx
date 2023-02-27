@@ -39,7 +39,7 @@ const Navbar = () => {
         className={`hidden md:flex whitespace-nowrap ${
           isTop
             ? ""
-            : "fixed top-0 right-0 flex place-content-end z-50 shadow-md fadeIn overflow-hidden  shadow-black w-full pr-4 2xl:pr-44"
+            : "fixed top-0 right-0 flex place-content-end z-50 shadow-md fadeIn overflow-hidden  shadow-black w-full pr-[2rem] lg:pr-[4rem] xl:pr-[4rem] 2xl:pr-[10rem]"
         }`}
       >
         <li className="p-4 cursor-pointer hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
@@ -114,7 +114,7 @@ const Navbar = () => {
             {isEnglish ? "Contact" : "Kontakt"}
           </Link>
         </li>
-        <div className="flex gap-4 pl-4 place-content-center">
+        <div className="flex gap-4 pl-4">
           <img
             src={German}
             alt="flag of germany"

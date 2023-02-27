@@ -17,22 +17,25 @@ export const About = () => {
           {isEnglish ? "ABOUT ME" : "ÜBER MICH"}
         </h2>
       </div>
-      <div
-        ref={ref}
-        className={
-          inView
-            ? "max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#0d2244] fadeIn"
-            : "max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#0d2244] invisible"
-        }
-      >
+      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#0d2244]">
         <div className="bg-[#0d2244]">
           <img
             src={profile}
             alt="ME"
-            className="shadow-lg rounded-xl bg-transparent shadow-black z-0 w-[400px]"
+            ref={ref}
+            className={
+              inView
+                ? "shadow-lg rounded-xl bg-transparent shadow-black z-0 w-[400px] fadeLeft visible"
+                : "shadow-lg rounded-xl bg-transparent shadow-black z-0 w-[400px] invisible"
+            }
           ></img>
         </div>
-        <div className="bg-[#0d2244]">
+        <div
+          ref={ref}
+          className={
+            inView ? "bg-[#0d2244] fadeRight visible" : "bg-[#0d2244] invisible"
+          }
+        >
           <p className="bg-[#0d2244] text-white font-Montserrat text-lg md:text-xl  lg:text-2xl text-justify mx-4 p-8 md:p-0 tracking-wide">
             {isEnglish ? "Hello I am Tolga Topal" : "Hey, ich bin Tolga Topal,"}
             {isEnglish
