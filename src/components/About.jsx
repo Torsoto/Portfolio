@@ -22,7 +22,7 @@ export const About = () => {
         className={
           inView
             ? "max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#0d2244] fadeIn"
-            : "max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#0d2244]"
+            : "max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#0d2244] invisible"
         }
       >
         <div className="bg-[#0d2244]">
