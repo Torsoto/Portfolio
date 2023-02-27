@@ -5,12 +5,18 @@ import { Link } from "react-scroll";
 import LanguageContext from "./Lng";
 import German from "./images/svgs/germany-flag.svg";
 import England from "./images/svgs/UK-flag.svg";
+import { MdDarkMode } from "react-icons/md";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const { isEnglish, setIsEnglish } = useContext(LanguageContext);
   const [activeImage, setActiveImage] = useState(null);
   const [isTop, setIsTop] = useState(true); // add state for top or not
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   const handleClick = (isEnglish) => {
     setIsEnglish(isEnglish);
@@ -30,13 +36,17 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between bg-transparent h-24 px-4 max-w-[1600px] mx-auto text-white">
+    <div
+      className={`flex items-center justify-between  h-24 px-4 max-w-[1600px] mx-auto text-white ${
+        isDarkMode ? "" : ""
+      }`}
+    >
       <img src={logo} alt="Profile Logo" width={40} className="mr-2"></img>
       <h1 className="w-full text-4xl font-bold md:text-5xl text-[#fe3e57] whitespace-nowrap">
         T|T
       </h1>
       <ul
-        className={`hidden  md:flex whitespace-nowrap ${
+        className={`hidden  md:flex whitespace-nowrap  ${
           isTop
             ? ""
             : "fixed top-0 right-0 flex place-content-end z-50 shadow-md fadeIn overflow-hidden  shadow-black w-full pr-[1rem] xl:pr-[5%] 2xl:pr-[12.5%]"
@@ -114,11 +124,11 @@ const Navbar = () => {
             {isEnglish ? "Contact" : "Kontakt"}
           </Link>
         </li>
-        <div className="flex gap-4 pl-4">
+        <div className="flex gap-4 pl-4 my-auto">
           <img
             src={German}
             alt="flag of germany"
-            className={`max-w-[34px] lg:active:translate-y-2 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
+            className={`max-w-[34px] lg:active:translate-y-1 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
               activeImage === "DE" ? "opacity-100" : "opacity-40"
             }`}
             onClick={() => handleClick(false)}
@@ -127,12 +137,19 @@ const Navbar = () => {
           <img
             src={England}
             alt="flag of england"
-            className={`max-w-[34px] lg:active:translate-y-2 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
+            className={`max-w-[34px] lg:active:translate-y-1 cursor-pointer hover:scale-110 transition-all duration-150 ease-in ${
               activeImage === "EN" ? "opacity-100" : "opacity-40"
             }`}
             onClick={() => handleClick(true)}
             style={{ opacity: isEnglish ? "1" : "0.5" }}
           />
+          <MdDarkMode
+            size={32}
+            alt="Dark/Light Mode"
+            title="NOT WORKING ATM!"
+            className="transition-all duration-150 ease-in cursor-pointer hover:scale-110 lg:active:translate-y-1"
+            onClick={toggleDarkMode}
+          ></MdDarkMode>
         </div>
       </ul>
       <div
@@ -251,6 +268,12 @@ const Navbar = () => {
               onClick={() => handleClick(true)}
               style={{ opacity: isEnglish ? "1" : "0.5" }}
             />
+            <MdDarkMode
+              size={32}
+              alt="Dark/Light Mode"
+              title="Dark/Light Mode"
+              className="cursor-pointer"
+            ></MdDarkMode>
           </div>
         </ul>
       </div>
