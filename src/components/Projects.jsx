@@ -24,7 +24,7 @@ const Projects = ({ p1, p2, p3 }) => {
       </div>
       <div
         ref={ref}
-        className={inView ? "fadeLeft bg-[#0d2244]" : "opacity-0  bg-[#0d2244]"}
+        className={inView ? "fadeLeft bg-[#0d2244]" : "invisible  bg-[#0d2244]"}
       >
         <div
           className="max-w-[1600px] mx-auto grid lg:grid-rows-1 lg:grid-cols-3

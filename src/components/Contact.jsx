@@ -17,7 +17,7 @@ const Contact = () => {
       <h6 className="text-3xl font-bold text-[#fe3e57] lg:text-4xl font-Poppins  text-center bg-[#17315a] tracking-widest">
         {isEnglish ? "CONTACT" : "KONTAKT"}
       </h6>
-      <div ref={ref} className={inView ? "fadeDown" : ""}>
+      <div ref={ref} className={inView ? "fadeDown" : "invisible"}>
         <div className="mx-auto text-white grid-col-3 bg-[#17315a] xl:w-[35%] lg:w-[45%] md:w-[60%] w-[80%]">
           <div className="bg-[#17315a]">
             <form action="https://formspree.io/f/xpzedeeg" method="POST">
@@ -70,7 +70,7 @@ const Contact = () => {
               <div className="grid place-items-center">
                 <button
                   type="sumbit"
-                  className="w-40 py-3 shadow-md shadow-black mt-4 text-2xl font-bold text-white transition-all duration-100 ease-in-out bg-[#fe3e57] rounded-lg lg:hover:scale-105 active:translate-y-1"
+                  className="py-3 px-8 shadow-md shadow-black mt-4 text-2xl font-bold text-white transition-all duration-100 ease-in-out bg-[#fe3e57] rounded-lg lg:hover:scale-105 active:translate-y-1"
                 >
                   {isEnglish ? "SEND" : "SENDEN"}
                 </button>

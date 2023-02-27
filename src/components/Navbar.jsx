@@ -154,7 +154,7 @@ const Navbar = () => {
             T|T
           </h1>
         </div>
-        <ul className="grid gap-1 pt-3 uppercase">
+        <ul className="grid gap-1 pt-3 overflow-hidden uppercase">
           <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#fe3e57] hover:font-bold hover:text-lg">
             <Link
               to="Home"

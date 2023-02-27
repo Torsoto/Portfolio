@@ -29,7 +29,7 @@ const Skills = () => {
         className={
           inView
             ? "fadeLeft w-full py-24 text-white bg-[#0d2244] max-w-[1600px] mx-auto "
-            : "w-full py-16 text-white bg-[#0d2244] max-w-[1600px] mx-auto"
+            : "w-full py-16 text-white bg-[#0d2244] max-w-[1600px] mx-auto invisible"
         }
       >
         <ul className="flex justify-evenly flex-wrap bg-[#0d2244] pb-12">
