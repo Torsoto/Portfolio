@@ -6,21 +6,21 @@ export const About = () => {
   const { isEnglish } = useContext(LanguageContext);
 
   return (
-    <div id="about" className="w-full px-4 pb-60 pt-20 bg-[#0d2244] z-0 ">
-      <div className=" bg-[#0d2244]">
-        <h2 className="lg:text-4xl text-3xl font-bold text-center text-white bg-[#0d2244] tracking-widest">
+    <div id="about" className="z-0 w-full px-4 pt-20  bg-[#161b22] pb-60 ">
+      <div className="bg-transparent ">
+        <h2 className="text-3xl font-bold tracking-widest text-center text-white bg-transparent lg:text-4xl">
           {isEnglish ? "ABOUT ME" : "ÜBER MICH"}
         </h2>
       </div>
-      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-[#0d2244]">
-        <div className="bg-[#0d2244]">
+      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-transparent">
+        <div className="bg-transparent">
           <img
             src={profile}
             alt="ME"
             className="shadow-lg rounded-xl bg-transparent shadow-black z-0 w-[400px]"
           ></img>
         </div>
-        <p className="bg-[#0d2244] text-white font-Montserrat text-lg md:text-xl  lg:text-2xl text-justify mx-4 p-8 md:p-0 tracking-wide">
+        <p className="p-8 mx-4 text-lg tracking-wide text-justify text-white bg-transparent font-Montserrat md:text-xl lg:text-2xl md:p-0">
           {isEnglish ? "Hello I am Tolga Topal" : "Hey, ich bin Tolga Topal,"}
           {isEnglish
             ? ", a 21-year-old student at FH Campus Wien."

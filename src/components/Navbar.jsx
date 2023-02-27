@@ -30,13 +30,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between h-24 px-4 max-w-[1600px] mx-auto text-white">
+    <div className="flex items-center justify-between bg-transparent h-24 px-4 max-w-[1600px] mx-auto text-white">
       <img src={logo} alt="Profile Logo" width={40} className="mr-2"></img>
       <h1 className="w-full text-4xl font-bold md:text-5xl text-[#fe3e57] whitespace-nowrap">
         T|T
       </h1>
       <ul
-        className={`hidden md:flex whitespace-nowrap ${
+        className={`hidden  md:flex whitespace-nowrap ${
           isTop
             ? ""
             : "fixed top-0 right-0 flex place-content-end z-50 shadow-md fadeIn overflow-hidden  shadow-black w-full pr-[1rem] xl:pr-[5%] 2xl:pr-[12.5%]"
@@ -122,7 +122,7 @@ const Navbar = () => {
               activeImage === "DE" ? "opacity-100" : "opacity-40"
             }`}
             onClick={() => handleClick(false)}
-            style={{ opacity: isEnglish ? "0.4" : "1" }}
+            style={{ opacity: isEnglish ? "0.5" : "1" }}
           />
           <img
             src={England}
@@ -131,15 +131,19 @@ const Navbar = () => {
               activeImage === "EN" ? "opacity-100" : "opacity-40"
             }`}
             onClick={() => handleClick(true)}
-            style={{ opacity: isEnglish ? "1" : "0.4" }}
+            style={{ opacity: isEnglish ? "1" : "0.5" }}
           />
         </div>
       </ul>
       <div
-        className="fixed z-50 border-[7px] border-[#17315a] rounded-full cursor-pointer right-4 md:hidden hover:scale-110"
+        className="fixed z-50 bg-transparent rounded-full cursor-pointer right-4 md:hidden hover:scale-110"
         onClick={handleNav}
       >
-        {nav ? <AiOutlineClose size={26} /> : <AiOutlineMenu size={26} />}
+        {nav ? (
+          <AiOutlineClose size={26} className="bg-transparent" />
+        ) : (
+          <AiOutlineMenu size={26} className="bg-transparent" />
+        )}
       </div>
       <div
         className={
@@ -236,7 +240,7 @@ const Navbar = () => {
                 activeImage === "DE" ? "opacity-100" : "opacity-40"
               }`}
               onClick={() => handleClick(false)}
-              style={{ opacity: isEnglish ? "0.4" : "1" }}
+              style={{ opacity: isEnglish ? "0.5" : "1" }}
             />
             <img
               src={England}
@@ -245,7 +249,7 @@ const Navbar = () => {
                 activeImage === "EN" ? "opacity-100" : "opacity-40"
               }`}
               onClick={() => handleClick(true)}
-              style={{ opacity: isEnglish ? "1" : "0.4" }}
+              style={{ opacity: isEnglish ? "1" : "0.5" }}
             />
           </div>
         </ul>

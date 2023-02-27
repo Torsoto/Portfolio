@@ -9,7 +9,7 @@ function Hero() {
   const { isEnglish } = useContext(LanguageContext);
 
   return (
-    <div id="Home" className="pt-32 text-white lg:pt-40">
+    <div id="Home" className="pt-32 text-white lg:pt-40 ">
       <div className="grid  lg:grid-cols-2 mx-auto text-2xl  md:text-4xl max-w-[1400px]">
         <div className="order-1 m-auto text-center lg:pl-8 lg:text-left lg:order-none">
           <p className="">

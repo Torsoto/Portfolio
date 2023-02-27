@@ -16,40 +16,40 @@ const Projects = ({ p1, p2, p3 }) => {
   const closeM1 = () => setShowM1(false);
 
   return (
-    <div id="projects" className="bg-[#0d2244] pt-20 pb-60 text-white">
-      <div className="bg-[#0d2244]">
-        <h3 className="font-bold lg:text-4xl text-3xl text-center text-white bg-[#0d2244] tracking-widest">
+    <div id="projects" className="bg-[#161b22] pt-20 pb-60 text-white">
+      <div className="bg-[#161b22]">
+        <h3 className="font-bold lg:text-4xl text-3xl text-center text-white bg-[#161b22] tracking-widest">
           {isEnglish ? "PROJECTS" : "PROJEKTE"}
         </h3>
       </div>
       <div
         ref={ref}
-        className={inView ? "fadeLeft bg-[#0d2244]" : "invisible  bg-[#0d2244]"}
+        className={inView ? "fadeLeft bg-[#161b22]" : "invisible  bg-[#161b22]"}
       >
         <div
           className="max-w-[1600px] mx-auto grid lg:grid-rows-1 lg:grid-cols-3
-       grid-col-1 grid-rows-3 pb-24 lg:w-full w-9/12 gap-12 bg-[#0d2244] pt-24"
+       grid-col-1 grid-rows-3 pb-24 lg:w-full w-9/12 gap-12 bg-[#161b22] pt-24"
         >
           <div
             onClick={() => setShowM1(true)}
-            className="m-2  transition-all duration-200 ease-in-out cursor-pointer md:hover:scale-105 bg-[#0d2244] active:translate-y-2"
+            className="m-2  transition-all duration-200 ease-in-out cursor-pointer md:hover:scale-105 bg-[#161b22] active:translate-y-2"
           >
-            <p className="md:text-3xl text-xl pb-1 text-center bg-[#0d2244] tracking-wide">
+            <p className="md:text-3xl text-xl pb-1 text-center bg-[#161b22] tracking-wide">
               Configurable Cash Register
             </p>
             <img
               src={P1}
               alt="first Project pic"
-              className="shadow-xl rounded-2xl shadow-black "
+              className="rounded-md shadow-xl shadow-black "
             ></img>
           </div>
-          <div className="grid m-2 text-2xl lg:text-3xl align-middle transition-all duration-200 ease-in-out cursor-pointer rounded-xl place-items-center md:hover:scale-105 bg-[#0d2244] active:translate-y-2">
-            <p className="bg-[#0d2244]">
+          <div className="grid m-2 text-2xl lg:text-3xl align-middle transition-all duration-200 ease-in-out cursor-pointer rounded-md place-items-center md:hover:scale-105 bg-[#161b22] active:translate-y-2">
+            <p className="bg-[#161b22]">
               {isEnglish ? "coming soon!" : "kommt bald!"}
             </p>
           </div>
-          <div className="grid  m-2 text-2xl lg:text-3xl align-middle transition-all duration-200 ease-in-out cursor-pointer rounded-xl place-items-center md:hover:scale-105 bg-[#0d2244] active:translate-y-2">
-            <p className="bg-[#0d2244]">
+          <div className="grid  m-2 text-2xl lg:text-3xl align-middle transition-all duration-200 ease-in-out cursor-pointer rounded-md place-items-center md:hover:scale-105 bg-[#161b22] active:translate-y-2">
+            <p className="bg-[#161b22]">
               {isEnglish ? "coming soon!" : "kommt bald!"}
             </p>
           </div>

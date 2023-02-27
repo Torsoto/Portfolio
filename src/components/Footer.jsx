@@ -8,8 +8,8 @@ const Footer = () => {
   const { isEnglish } = useContext(LanguageContext);
 
   return (
-    <div className="w-full bg-[#061022] pb-4 pt-2 px-4 mx-auto flex flex-col items-center justify-center text-white">
-      <div className="flex items-center justify-center gap-6 mt-2 bg-[#061022]">
+    <div className="flex flex-col shadow-inner shadow-black items-center justify-center w-full px-4 pt-2 pb-4 mx-auto text-white bg-[#0d1117]">
+      <div className="flex items-center justify-center gap-6 mt-2 bg-[#0d1117]">
         <a
           href="https://github.com/Torsoto"
           target={"_blank"}
@@ -18,16 +18,16 @@ const Footer = () => {
         >
           <FaGithubSquare
             size={36}
-            className="bg-[#061022] hover:scale-125 transition-all duration-300 ease-in-out"
+            className="transition-all duration-300 ease-in-out bg-[#0d1117] hover:scale-125"
             title="Github"
           />
         </a>
-        <div className="flex items-center justify-center gap-2 bg-[#061022]">
+        <div className="flex items-center justify-center gap-2 bg-[#0d1117]">
           <img
             src={logo}
             alt="Profile Logo"
             width={40}
-            className="bg-[#061022]"
+            className="bg-[#0d1117]"
           />
         </div>
         <a
@@ -38,27 +38,27 @@ const Footer = () => {
         >
           <FaLinkedin
             size={36}
-            className="bg-[#061022] hover:scale-125 transition-all duration-300 ease-in-out"
+            className="transition-all duration-300 ease-in-out bg-[bg-[#0d1117] hover:scale-125"
             title="LinkedIn"
           />
         </a>
       </div>
-      <div className="bg-[#061022] pt-1">
-        <p className="bg-[#061022] text-gray-500 flex gap-2 place-content-center">
+      <div className="pt-1 bg-[#0d1117]">
+        <p className="flex gap-2 text-gray-500 bg-[#0d1117] place-content-center">
           {isEnglish ? "Made with " : "Erstellt mit "}
           <FaReact
             size={24}
-            className="text-gray-500 bg-[#061022]"
+            className="text-gray-500 bg-[#0d1117]"
             title="React"
           />{" "}
           |
           <SiTailwindcss
-            className="text-gray-500 bg-[#061022]"
+            className="text-gray-500 bg-[#0d1117]"
             size={24}
             title="Tailwind CSS"
           />
         </p>
-        <p className="bg-[#061022] tracking-tight text-gray-500  text-center">
+        <p className="tracking-tight text-center text-gray-500 bg-[#0d1117]">
           © 2023 Tolga Topal
         </p>
       </div>
