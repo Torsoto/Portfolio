@@ -18,7 +18,7 @@ const Projects = ({ p1, p2, p3 }) => {
   return (
     <div id="projects" className="bg-[#0d2244] pt-20 pb-60 text-white">
       <div className="bg-[#0d2244]">
-        <h3 className="font-bold lg:text-4xl text-3xl text-center text-[#fe3e57] bg-[#0d2244] tracking-widest">
+        <h3 className="font-bold lg:text-4xl text-3xl text-center text-white bg-[#0d2244] tracking-widest">
           {isEnglish ? "PROJECTS" : "PROJEKTE"}
         </h3>
       </div>

@@ -14,7 +14,7 @@ const Contact = () => {
       id="contact"
       className="lg:p-8 p-4 bg-[#17315a]  grid grid-row-3 w-full"
     >
-      <h6 className="text-3xl font-bold text-[#fe3e57] lg:text-4xl font-Poppins  text-center bg-[#17315a] tracking-widest">
+      <h6 className="text-3xl font-bold text-white lg:text-4xl font-Poppins  text-center bg-[#17315a] tracking-widest">
         {isEnglish ? "CONTACT" : "KONTAKT"}
       </h6>
       <div ref={ref} className={inView ? "fadeDown" : "invisible"}>

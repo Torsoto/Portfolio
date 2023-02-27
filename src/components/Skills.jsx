@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <div className="w-full bg-[#0d2244] pb-12">
       <div className=" bg-[#0d2244]">
-        <h4 className="lg:text-4xl  text-3xl font-bold text-center text-[#fe3e57] bg-[#0d2244] tracking-widest">
+        <h4 className="lg:text-4xl  text-3xl font-bold text-center text-white bg-[#0d2244] tracking-widest">
           {isEnglish ? "SKILLS" : "FÄHIGKEITEN"}
         </h4>
       </div>
