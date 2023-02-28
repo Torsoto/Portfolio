@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import { FaGithubSquare, FaLinkedin, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
-import logo from "../components/images/favicon.png";
 import LanguageContext from "./Lng";
 
 const Footer = () => {
-  const { isEnglish } = useContext(LanguageContext);
+  const { isEnglish, isDarkMode } = useContext(LanguageContext);
 
   return (
     <div className="flex flex-col shadow-inner shadow-black items-center justify-center w-full px-4 pt-2 pb-4 mx-auto text-white bg-[#0d1117]">
@@ -22,14 +21,7 @@ const Footer = () => {
             title="Github"
           />
         </a>
-        <div className="flex items-center justify-center gap-2 bg-[#0d1117]">
-          <img
-            src={logo}
-            alt="Profile Logo"
-            width={40}
-            className="bg-[#0d1117]"
-          />
-        </div>
+        ❤️
         <a
           href="https://www.linkedin.com/in/tolga-topal-6171ab262/"
           target={"_blank"}

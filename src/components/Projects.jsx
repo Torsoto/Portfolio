@@ -9,7 +9,7 @@ const Projects = ({ p1, p2, p3 }) => {
     triggerOnce: true,
   });
 
-  const { isEnglish } = useContext(LanguageContext);
+  const { isEnglish, isDarkMode } = useContext(LanguageContext);
 
   const [showM1, setShowM1] = useState(false);
 

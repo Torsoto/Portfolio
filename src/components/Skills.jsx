@@ -14,7 +14,7 @@ const Skills = () => {
     triggerOnce: true,
   });
 
-  const { isEnglish } = useContext(LanguageContext);
+  const { isEnglish, isDarkMode } = useContext(LanguageContext);
 
   return (
     <div className="w-full pb-12  bg-[#161b22]">

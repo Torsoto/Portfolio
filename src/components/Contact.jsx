@@ -7,7 +7,7 @@ const Contact = () => {
     triggerOnce: true,
   });
 
-  const { isEnglish } = useContext(LanguageContext);
+  const { isEnglish, isDarkMode } = useContext(LanguageContext);
 
   return (
     <div

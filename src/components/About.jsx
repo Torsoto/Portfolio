@@ -1,14 +1,23 @@
 import React, { useContext } from "react";
-import profile from "./images/profile2.jpg";
+import profile from "./images/ME.webp";
 import LanguageContext from "./Lng";
 
 export const About = () => {
-  const { isEnglish } = useContext(LanguageContext);
+  const { isEnglish, isDarkMode } = useContext(LanguageContext);
 
   return (
-    <div id="about" className="z-0 w-full px-4 pt-20  bg-[#161b22] pb-60 ">
+    <div
+      id="about"
+      className={`z-0 w-full px-4 pt-20  pb-60 ${
+        isDarkMode ? "bg-[#161b22]" : "bg-white text-black "
+      } `}
+    >
       <div className="bg-transparent ">
-        <h2 className="text-3xl font-bold tracking-widest text-center text-white bg-transparent lg:text-4xl">
+        <h2
+          className={`text-3xl font-bold tracking-widest text-center bg-transparent lg:text-4xl ${
+            isDarkMode ? "text-white" : "text-black"
+          }`}
+        >
           {isEnglish ? "ABOUT ME" : "ÜBER MICH"}
         </h2>
       </div>
@@ -20,7 +29,11 @@ export const About = () => {
             className="shadow-lg rounded-xl bg-transparent shadow-black z-0 w-[400px]"
           ></img>
         </div>
-        <p className="p-8 mx-4 text-lg tracking-wide text-justify text-white bg-transparent font-Montserrat md:text-xl lg:text-2xl md:p-0">
+        <p
+          className={`p-8 mx-4 text-lg tracking-wide text-justify bg-transparent font-Montserrat md:text-xl lg:text-2xl md:p-0 ${
+            isDarkMode ? "text-white" : "text-black font-semibold"
+          }`}
+        >
           {isEnglish ? "Hello I am Tolga Topal" : "Hey, ich bin Tolga Topal,"}
           {isEnglish
             ? ", a 21-year-old student at FH Campus Wien."
