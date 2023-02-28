@@ -37,7 +37,7 @@ const M1 = ({ visible, onClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className=" text-black bg-transparent rounded-md overflow-hidden max-w-[1200px] w-[90%] fadeIn"
+        className=" text-black bg-transparent rounded-md overflow-hidden max-w-[1200px] w-[98%] fadeIn"
       >
         <TransformWrapper
           doubleClick={{ disabled: true }}

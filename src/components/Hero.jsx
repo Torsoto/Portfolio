@@ -19,7 +19,7 @@ function Hero() {
         <div className="order-1 m-auto text-center lg:pl-8 lg:text-left lg:order-none">
           <p className="">
             {isEnglish ? "Hi There" : "Hallo"}
-            <span className="inline-block p-2 ronded-full animate-wave">
+            <span className="z-0 inline-block p-2 ronded-full animate-wave">
               👋
             </span>
             {isEnglish ? "I'm" : "Ich bin"}

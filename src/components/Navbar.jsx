@@ -166,8 +166,8 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed left-0 top-0 w-[65%] overflow-hidden border-r h-full"
-            : "hidden  overflow-hidden  z-50"
+            ? "fixed z-[1000] left-0 top-0 w-[65%] overflow-hidden border-r h-full"
+            : "hidden overflow-hidden  z-50"
         }
       >
         <div className="flex ml-4 mt-7">

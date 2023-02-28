@@ -4,8 +4,6 @@ import M1 from "./Modal/M1";
 import P1 from "./images/Project1/2.jpg";
 import LanguageContext from "./Lng";
 import { FaGithubSquare } from "react-icons/fa";
-import Java from "./images/logos/java.png";
-import JSON from "./images/logos/JSON.png";
 
 const Projects = ({ p1, p2, p3 }) => {
   const { ref, inView } = useInView({
@@ -36,12 +34,12 @@ const Projects = ({ p1, p2, p3 }) => {
         <div className="max-w-[1600px] mx-auto grid grid-col-1 xl:grid-cols-2 grid-rows-1 pb-24  bg-[#161b22]">
           <div
             onClick={() => setShowM1(true)}
-            className="m-2 pb-8 transition-all duration-200 ease-in-out cursor-pointer bg-[#161b22] active:translate-y-2"
+            className="px-2 pb-8 transition-all duration-200 ease-in-out cursor-pointer bg-[#161b22] active:translate-y-2"
           >
             <img
               src={P1}
               alt="first Project pic"
-              className="w-[85%] mx-auto transition-all duration-200 ease-in-out rounded-md shadow-none md:shadow-xl active:translate-y-2 md:hover:scale-105 md:shadow-black "
+              className="mx-auto w-[95%] xl:w-[85%] transition-all duration-200 ease-in-out rounded-md shadow-lg active:translate-y-2 md:hover:scale-105 shadow-black"
             ></img>
           </div>
           <div className=" my-auto mx-8 text-justify text-white bg-[#161b22] text-lg md:text-2xl font-Montserrat">
