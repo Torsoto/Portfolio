@@ -30,7 +30,7 @@ export const About = () => {
           ></img>
         </div>
         <p
-          className={`p-8 mx-4 text-lg tracking-wide text-justify bg-transparent font-Montserrat md:text-xl lg:text-2xl md:p-0 ${
+          className={` mx-4 text-lg pt-8 tracking-wide text-justify bg-transparent font-Montserrat md:text-xl lg:text-2xl  ${
             isDarkMode ? "text-white" : "text-black font-semibold"
           }`}
         >

@@ -146,7 +146,7 @@ const Navbar = () => {
             size={32}
             alt="Dark/Light Mode"
             title="Dark/Light Toggle"
-            className={`transition-all duration-150 bg-transparent ease-in cursor-pointer hover:scale-110 lg:active:translate-y-1 ${
+            className={`transition-all duration-150 bg-transparent ease-in cursor-pointer hover:scale-110 lg:active:translate-y-1 hidden ${
               isDarkMode ? "text-white" : "text-black"
             }`}
             onClick={() => toggleDarkMode(false)}
@@ -273,7 +273,7 @@ const Navbar = () => {
               size={32}
               alt="Dark/Light Mode"
               title="Dark/Light Mode"
-              className="cursor-pointer"
+              className="hidden cursor-pointer"
             ></MdDarkMode>
           </div>
         </ul>

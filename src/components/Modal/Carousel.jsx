@@ -10,7 +10,7 @@ const Carousel = ({ children: slides }) => {
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
   return (
-    <div className="relative overflow-hidden bg-white rounded-md shadow-md shadow-black ">
+    <div className="relative overflow-hidden bg-white shadow-black ">
       <div
         className="flex transition-transform duration-700 ease-out"
         style={{ transform: `translateX(-${curr * 100}%)` }}

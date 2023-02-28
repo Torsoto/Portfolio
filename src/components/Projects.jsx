@@ -3,6 +3,9 @@ import { useInView } from "react-intersection-observer";
 import M1 from "./Modal/M1";
 import P1 from "./images/Project1/2.jpg";
 import LanguageContext from "./Lng";
+import { FaGithubSquare } from "react-icons/fa";
+import Java from "./images/logos/java.png";
+import JSON from "./images/logos/JSON.png";
 
 const Projects = ({ p1, p2, p3 }) => {
   const { ref, inView } = useInView({
@@ -24,34 +27,47 @@ const Projects = ({ p1, p2, p3 }) => {
       </div>
       <div
         ref={ref}
-        className={inView ? "fadeLeft bg-[#161b22]" : "invisible  bg-[#161b22]"}
+        className={
+          inView
+            ? "fadeLeft pt-16 md:pt-32 bg-[#161b22]"
+            : "invisible  bg-[#161b22]"
+        }
       >
-        <div
-          className="max-w-[1600px] mx-auto grid lg:grid-rows-1 lg:grid-cols-3
-       grid-col-1 grid-rows-3 pb-24 lg:w-full w-9/12 gap-12 bg-[#161b22] pt-24"
-        >
+        <div className="max-w-[1600px] mx-auto grid grid-col-1 xl:grid-cols-2 grid-rows-1 pb-24  bg-[#161b22]">
           <div
             onClick={() => setShowM1(true)}
-            className="m-2  transition-all duration-200 ease-in-out cursor-pointer md:hover:scale-105 bg-[#161b22] active:translate-y-2"
+            className="m-2 pb-8 transition-all duration-200 ease-in-out cursor-pointer bg-[#161b22] active:translate-y-2"
           >
-            <p className="md:text-3xl text-xl pb-1 text-center bg-[#161b22] tracking-wide">
-              Configurable Cash Register
-            </p>
             <img
               src={P1}
               alt="first Project pic"
-              className="rounded-md shadow-xl shadow-black "
+              className="w-[85%] mx-auto transition-all duration-200 ease-in-out rounded-md shadow-none md:shadow-xl active:translate-y-2 md:hover:scale-105 md:shadow-black "
             ></img>
           </div>
-          <div className="grid m-2 text-2xl lg:text-3xl align-middle transition-all duration-200 ease-in-out cursor-pointer rounded-md place-items-center md:hover:scale-105 bg-[#161b22] active:translate-y-2">
-            <p className="bg-[#161b22]">
-              {isEnglish ? "coming soon!" : "kommt bald!"}
-            </p>
-          </div>
-          <div className="grid  m-2 text-2xl lg:text-3xl align-middle transition-all duration-200 ease-in-out cursor-pointer rounded-md place-items-center md:hover:scale-105 bg-[#161b22] active:translate-y-2">
-            <p className="bg-[#161b22]">
-              {isEnglish ? "coming soon!" : "kommt bald!"}
-            </p>
+          <div className=" my-auto mx-8 text-justify text-white bg-[#161b22] text-lg md:text-2xl font-Montserrat">
+            <div className="flex bg-[#161b22]">
+              <h1 className="pb-1 text-[#fe3e57] text-xl bg-[#161b22] sm:text-3xl font-Poppins">
+                {isEnglish
+                  ? "Configurable Cash Register"
+                  : "Konfigurierbare Registrierkasse"}
+              </h1>
+              <a
+                href="https://github.com/d3vote/XSolutions-Configurable-Cash-Register"
+                alt="Link to Project Repository"
+                target={"_blank"}
+                rel="noreferrer"
+                className="transition-all duration-100 ease-out bg-[#161b22]"
+                title="Github-Repo"
+              >
+                <FaGithubSquare
+                  size={30}
+                  className="mt-[3px] w-[25px] h-[25px] text-white md:w-[30px] md:h-[30px] ml-2 transition-all duration-300 ease-in-out bg-[#161b22] hover:scale-125"
+                />
+              </a>
+            </div>
+            {isEnglish
+              ? "In my first FH project, my team and i developed a cash register application that could be customized to suit various needs. Using JavaFX , our team created an application with multiple functionalities, including the ability to retrieve old receipts, user-friendly animations, table + user/admin system. Additionally we used JSON to store all our login and product data. Overall, the project was a fantastic learning experience, and we gained many insights into software development."
+              : "Bei meinem ersten Projekt an der FH haben mein Team und ich eine Kassen-Applikation entwickelt, die an verschiedene Anforderungen angepasst werden kann. Mit Hilfe von JavaFX hat unser Team eine Anwendung mit mehreren Funktionen erstellt, inklusive der Möglichkeit, alte Belege abzurufen, benutzerfreundliche Animationen sowie ein Tisch- und Benutzer-/Admin-System. Zusätzlich haben wir JSON verwendet, um alle unsere Login- und Produktinformationen zu speichern. Insgesamt war das Projekt eine fantastische Lernerfahrung, bei der wir viele Einblicke in die Softwareentwicklung gewonnen haben."}
           </div>
         </div>
       </div>
