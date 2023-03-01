@@ -33,7 +33,7 @@ const M1 = ({ visible, onClose }) => {
           disablePadding
           wheel={0.2}
         >
-          <div className="mx-auto w-[95%] md:w-full">
+          <div className="mx-auto  md:max-w-[95%]">
             <TransformComponent>
               <Carousel>
                 {[

@@ -31,10 +31,10 @@ const Projects = ({ p1, p2, p3 }) => {
             : "invisible  bg-[#161b22]"
         }
       >
-        <div className="max-w-[1600px] mx-auto grid grid-col-1 xl:grid-cols-2 grid-rows-1 pb-24  bg-[#161b22]">
+        <div className="md:w-full max-w-[80%]  mx-auto grid grid-col-1 xl:grid-cols-2 grid-rows-1 pb-24  bg-[#161b22]">
           <div
             onClick={() => setShowM1(true)}
-            className="px-2 pb-8 transition-all duration-200 ease-in-out cursor-pointer bg-[#161b22] active:translate-y-2"
+            className="pb-8 transition-all duration-200 my-auto ease-in-out cursor-pointer bg-[#161b22] active:translate-y-2"
           >
             <img
               src={P1}
@@ -42,7 +42,7 @@ const Projects = ({ p1, p2, p3 }) => {
               className="mx-auto w-[95%] xl:w-[85%] transition-all duration-200 ease-in-out rounded-md shadow-lg active:translate-y-2 md:hover:scale-105 shadow-black"
             ></img>
           </div>
-          <div className=" my-auto mx-8 text-justify text-white bg-[#161b22] text-lg md:text-2xl font-Montserrat">
+          <div className="mx-4 text-justify text-white bg-[#161b22] text-lg md:text-xl font-Montserrat">
             <div className="flex bg-[#161b22]">
               <h1 className="pb-1 text-[#fe3e57] text-xl bg-[#161b22] sm:text-3xl font-Poppins">
                 {isEnglish

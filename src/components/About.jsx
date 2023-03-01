@@ -5,6 +5,13 @@ import LanguageContext from "./Lng";
 export const About = () => {
   const { isEnglish, isDarkMode } = useContext(LanguageContext);
 
+  const age = () => {
+    return (
+      21
+      
+    )
+  }
+
   return (
     <div
       id="about"
@@ -21,7 +28,7 @@ export const About = () => {
           {isEnglish ? "ABOUT ME" : "ÜBER MICH"}
         </h2>
       </div>
-      <div className="max-w-[1600px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-transparent">
+      <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 pt-20 lg:grid-col-2 xl:grid-col-2 place-items-center bg-transparent">
         <div className="bg-transparent">
           <img
             src={profile}

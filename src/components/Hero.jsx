@@ -15,7 +15,7 @@ function Hero() {
         isDarkMode ? "bg-[#0d1117] text-white" : "text-black bg-[#efefef]"
       }`}
     >
-      <div className="grid  lg:grid-cols-2 mx-auto text-2xl  md:text-4xl max-w-[1400px]">
+      <div className="grid  lg:grid-cols-2 mx-auto text-2xl  md:text-4xl max-w-[1200px]">
         <div className="order-1 m-auto text-center lg:pl-8 lg:text-left lg:order-none">
           <p className="">
             {isEnglish ? "Hi There" : "Hallo"}

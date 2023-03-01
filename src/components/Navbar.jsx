@@ -46,9 +46,7 @@ const Navbar = () => {
         className={`hidden md:flex md:mx-auto whitespace-nowrap ${
           isTop
             ? ``
-            : `fixed top-0 right-0 flex justify-center z-50 shadow-md overflow-hidden  shadow-black w-full ${
-                isDarkMode ? "bg-[#0d1117]" : "bg-[#f6f8fa]"
-              }  `
+            : `fixed top-0 right-0 flex justify-center z-50 shadow-md overflow-hidden   shadow-black w-full`
         }`}
       >
         <li className="p-4 cursor-pointer bg-transparent hover:scale-110 transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
@@ -166,16 +164,10 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed z-[1000] left-0 top-0 w-[65%] overflow-hidden border-r h-full"
+            ? "fixed z-[1000] left-0 top-0 w-[50%] overflow-hidden border-r h-full"
             : "hidden overflow-hidden  z-50"
         }
       >
-        <div className="flex ml-4 mt-7">
-          <img src={logo} alt="Profile Logo" width={35} className="mr-1"></img>
-          <h1 className="w-full text-3xl font-bold whitespace-nowrap text-[#fe3e57]">
-            T|T
-          </h1>
-        </div>
         <ul className="grid gap-1 pt-3 overflow-hidden uppercase">
           <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#fe3e57] hover:font-bold hover:text-lg">
             <Link
