@@ -1,14 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
 
-//Icons
-import { AiFillCloseCircle } from "react-icons/ai";
-import { BiReset } from "react-icons/bi";
-import { BsZoomIn, BsZoomOut } from "react-icons/bs";
-
 //Images and Videos
-import Java from "../images/logos/JavaSmall.png";
-import JSON from "../images/logos/JSON.png";
 import V1 from "../videos/1.mp4";
 import V2 from "../videos/2.mp4";
 import V3 from "../videos/3.mp4";
@@ -21,13 +14,9 @@ import V9 from "../videos/9.mp4";
 
 import Carousel from "./Carousel";
 
-import LanguageContext from "../Lng";
-
 const slides = [V1, V2, V3, V4, V5, V6, V7, V8, V9];
 
 const M1 = ({ visible, onClose }) => {
-  const { isEnglish } = useContext(LanguageContext);
-
   if (!visible) return null;
 
   return (
@@ -44,7 +33,7 @@ const M1 = ({ visible, onClose }) => {
           disablePadding
           wheel={0.2}
         >
-          <div className="mx-auto ">
+          <div className="mx-auto w-[95%] md:w-full">
             <TransformComponent>
               <Carousel>
                 {[

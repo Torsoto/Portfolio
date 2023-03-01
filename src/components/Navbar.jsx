@@ -46,7 +46,7 @@ const Navbar = () => {
         className={`hidden md:flex md:mx-auto whitespace-nowrap ${
           isTop
             ? ``
-            : `fixed top-0 right-0 flex justify-center z-50 shadow-md fadeIn overflow-hidden  shadow-black w-full ${
+            : `fixed top-0 right-0 flex justify-center z-50 shadow-md overflow-hidden  shadow-black w-full ${
                 isDarkMode ? "bg-[#0d1117]" : "bg-[#f6f8fa]"
               }  `
         }`}
@@ -115,7 +115,7 @@ const Navbar = () => {
           <Link
             to="contact"
             smooth={true}
-            duration={500}
+            duration={800}
             spy={true}
             exact="true"
             offset={-50}
@@ -242,7 +242,7 @@ const Navbar = () => {
             <Link
               to="contact"
               smooth={true}
-              duration={500}
+              duration={800}
               spy={true}
               exact="true"
               offset={-80}
