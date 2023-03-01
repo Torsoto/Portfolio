@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import logo from "../components/images/favicon.png";
 import { Link } from "react-scroll";
 import LanguageContext from "./Lng";
 import German from "./images/svgs/germany-flag.svg";
@@ -53,7 +52,7 @@ const Navbar = () => {
           <Link
             to="Home"
             smooth={true}
-            duration={500}
+            duration={1000}
             spy={true}
             exact="true"
             offset={-100}
@@ -68,7 +67,7 @@ const Navbar = () => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-50}
+            offset={-60}
           >
             {isEnglish ? "About Me" : "Über mich"}
           </Link>
@@ -80,7 +79,7 @@ const Navbar = () => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-50}
+            offset={-70}
           >
             {isEnglish ? "Projects" : "Projekte"}
           </Link>
@@ -92,7 +91,7 @@ const Navbar = () => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-150}
+            offset={-300}
           >
             {isEnglish ? "Skills" : "Fähigkeiten"}
           </Link>
@@ -176,7 +175,7 @@ const Navbar = () => {
               duration={500}
               spy={true}
               exact="true"
-              offset={-80}
+              offset={-100}
             >
               {isEnglish ? "Home" : "Start"}
             </Link>
@@ -188,7 +187,6 @@ const Navbar = () => {
               duration={500}
               spy={true}
               exact="true"
-              offset={-80}
             >
               {isEnglish ? "About Me" : "Über mich"}
             </Link>
@@ -200,7 +198,6 @@ const Navbar = () => {
               duration={500}
               spy={true}
               exact="true"
-              offset={-80}
             >
               {isEnglish ? "Projects" : "Projekte"}
             </Link>
@@ -213,7 +210,7 @@ const Navbar = () => {
               duration={500}
               spy={true}
               exact="true"
-              offset={-80}
+              offset={-200}
             >
               {isEnglish ? "Skills" : "Fähigkeiten"}
             </Link>
@@ -225,7 +222,6 @@ const Navbar = () => {
               duration={500}
               spy={true}
               exact="true"
-              offset={-80}
             >
               {isEnglish ? "Expierence" : "Erfahrung"}
             </Link>
@@ -237,7 +233,6 @@ const Navbar = () => {
               duration={800}
               spy={true}
               exact="true"
-              offset={-80}
             >
               {isEnglish ? "Contact" : "Kontakt"}
             </Link>

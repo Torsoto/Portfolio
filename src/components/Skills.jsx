@@ -12,9 +12,11 @@ import LanguageContext from "./Lng";
 const Skills = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
+    delay: 200,
+    threshold: 0,
   });
 
-  const { isEnglish, isDarkMode } = useContext(LanguageContext);
+  const { isEnglish } = useContext(LanguageContext);
 
   return (
     <div className="w-full pb-12  bg-[#161b22]">
@@ -98,7 +100,7 @@ const Skills = () => {
               src={tailwind}
               alt="Tailwind CSS Logo"
               title="Tailwind CSS Logo"
-              className="h-32 bg-transparent"
+              className="h-32 mx-auto bg-transparent"
             />
             <p className="text-2xl text-center bg-transparent">Tailwind CSS</p>
           </li>

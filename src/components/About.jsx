@@ -5,13 +5,6 @@ import LanguageContext from "./Lng";
 export const About = () => {
   const { isEnglish, isDarkMode } = useContext(LanguageContext);
 
-  const age = () => {
-    return (
-      21
-      
-    )
-  }
-
   return (
     <div
       id="about"
@@ -36,11 +29,7 @@ export const About = () => {
             className="shadow-lg rounded-xl bg-transparent shadow-black z-0 w-[400px]"
           ></img>
         </div>
-        <p
-          className={` mx-4 text-lg pt-8 tracking-wide text-justify bg-transparent font-Montserrat md:text-xl lg:text-2xl  ${
-            isDarkMode ? "text-white" : "text-black font-semibold"
-          }`}
-        >
+        <p className="pt-8 mx-4 tracking-tighter text-justify text-white bg-transparent md:pt-0 font-Montserrat md:text-xl lg:text-2xl">
           {isEnglish ? "Hello I am Tolga Topal" : "Hey, ich bin Tolga Topal,"}
           {isEnglish
             ? ", a 21-year-old student at FH Campus Wien."

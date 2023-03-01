@@ -5,9 +5,11 @@ import LanguageContext from "./Lng";
 const Contact = () => {
   const { ref, inView } = useInView({
     triggerOnce: true,
+    delay: 200,
+    threshold: 0,
   });
 
-  const { isEnglish, isDarkMode } = useContext(LanguageContext);
+  const { isEnglish } = useContext(LanguageContext);
 
   return (
     <div id="contact" className="w-full mx-auto bg-[#161b22]">

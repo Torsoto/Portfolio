@@ -4,7 +4,7 @@ import { SiTailwindcss } from "react-icons/si";
 import LanguageContext from "./Lng";
 
 const Footer = () => {
-  const { isEnglish, isDarkMode } = useContext(LanguageContext);
+  const { isEnglish } = useContext(LanguageContext);
 
   return (
     <div className="flex flex-col shadow-inner shadow-black items-center justify-center w-full px-4 pt-2 pb-4 mx-auto text-white bg-[#0d1117]">
