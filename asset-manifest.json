@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.65e08692.css",
-    "main.js": "/Portfolio/static/js/main.c6971c7b.js",
+    "main.js": "/Portfolio/static/js/main.c4c8f91a.js",
     "static/media/2.mp4": "/Portfolio/static/media/2.687003a562f2c11deae0.mp4",
     "static/media/4.mp4": "/Portfolio/static/media/4.793e44a4cb2f01268c6c.mp4",
     "static/media/8.mp4": "/Portfolio/static/media/8.a9c2eea0c40de4e56778.mp4",
@@ -12,21 +12,31 @@
     "static/media/ME.webp": "/Portfolio/static/media/ME.6ef4fd06fbc23b68b1db.webp",
     "static/media/5.mp4": "/Portfolio/static/media/5.fb55a284b8de26dfe549.mp4",
     "static/media/6.mp4": "/Portfolio/static/media/6.7056761d77f2b7dab9a3.mp4",
-    "static/media/2.jpg": "/Portfolio/static/media/2.84a87c619202c0566a7b.jpg",
+    "static/media/2.jpg": "/Portfolio/static/media/2.3cc1e26c0e7d34a23be8.jpg",
     "static/media/Montserrat-Regular.otf": "/Portfolio/static/media/Montserrat-Regular.65bc44fbf8204991497c.otf",
     "static/media/Roboto-Regular.ttf": "/Portfolio/static/media/Roboto-Regular.6bede58e856278b0f8f1.ttf",
     "static/media/Poppins-Regular.ttf": "/Portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/3.jpg": "/Portfolio/static/media/3.2608fc0f4e8531bda38a.jpg",
+    "static/media/4.jpg": "/Portfolio/static/media/4.186ae8412fa63f82d8d5.jpg",
+    "static/media/7.jpg": "/Portfolio/static/media/7.1cbb29b1a83cc61c4551.jpg",
+    "static/media/5.jpg": "/Portfolio/static/media/5.cd845ecd51104ffb95c2.jpg",
+    "static/media/8.jpg": "/Portfolio/static/media/8.a280c811cf35f487fb9c.jpg",
+    "static/media/6.jpg": "/Portfolio/static/media/6.5f2de4bbccfbae5c00af.jpg",
+    "static/media/1.jpg": "/Portfolio/static/media/1.3978b6e17288e9cbec13.jpg",
     "static/media/hero.svg": "/Portfolio/static/media/hero.7bb68492d09d7685334c732e9649c2e0.svg",
     "static/media/javascript.png": "/Portfolio/static/media/javascript.8618298aa7a3f221cfc1.png",
     "static/media/react.png": "/Portfolio/static/media/react.7f810bcc50eb5be9eda3.png",
+    "static/media/NodeJS.svg": "/Portfolio/static/media/NodeJS.78524595dc9efbd97ee938d5d77da5da.svg",
     "static/media/UK-flag.svg": "/Portfolio/static/media/UK-flag.b655986d51a395b27c4e645a67d65b5e.svg",
+    "static/media/C.svg": "/Portfolio/static/media/C.f3c93ffaea1321f5cfc0092ef579e390.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/germany-flag.svg": "/Portfolio/static/media/germany-flag.07e0e86be92e76ed0c77a4f7ced361c1.svg",
+    "static/media/firebase.svg": "/Portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
     "main.65e08692.css.map": "/Portfolio/static/css/main.65e08692.css.map",
-    "main.c6971c7b.js.map": "/Portfolio/static/js/main.c6971c7b.js.map"
+    "main.c4c8f91a.js.map": "/Portfolio/static/js/main.c4c8f91a.js.map"
   },
   "entrypoints": [
     "static/css/main.65e08692.css",
-    "static/js/main.c6971c7b.js"
+    "static/js/main.c4c8f91a.js"
   ]
 }
