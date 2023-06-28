@@ -6,6 +6,9 @@ import javascript from "./images/logos/javascript.png";
 import python from "./images/logos/python.png";
 import react from "./images/logos/react.png";
 import tailwind from "./images/logos/tailwind.png";
+import NodeJS from "./images/logos/NodeJS.svg"
+import Firebase from "./images/logos/firebase.svg"
+import C from "./images/logos/C.svg"
 import { useInView } from "react-intersection-observer";
 import LanguageContext from "./Lng";
 
@@ -34,7 +37,7 @@ const Skills = () => {
             : "w-full py-16 text-white bg-transparent max-w-[1200px] mx-auto invisible"
         }
       >
-        <ul className="flex flex-wrap pb-12 bg-transparent justify-evenly">
+        <ul className="flex flex-wrap pb-12 mx-auto bg-transparent justify-evenly">
           <li className="bg-transparent">
             <img
               title="HTML5 Logo"
@@ -103,6 +106,33 @@ const Skills = () => {
               className="h-32 mx-auto bg-transparent"
             />
             <p className="text-2xl text-center bg-transparent">Tailwind CSS</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={C}
+              alt="C Logo"
+              title="C Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">C</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={Firebase}
+              alt="Firebase Logo"
+              title="Firebase Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Firebase</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={NodeJS}
+              alt="NodeJS Logo"
+              title="NodeJS Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Node JS</p>
           </li>
         </ul>
       </div>
