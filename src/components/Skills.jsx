@@ -6,9 +6,13 @@ import javascript from "./images/logos/javascript.png";
 import python from "./images/logos/python.png";
 import react from "./images/logos/react.png";
 import tailwind from "./images/logos/tailwind.png";
-import NodeJS from "./images/logos/NodeJS.svg"
-import Firebase from "./images/logos/firebase.svg"
-import C from "./images/logos/C.svg"
+import NodeJS from "./images/logos/NodeJS.svg";
+import Firebase from "./images/logos/firebase.svg";
+import C from "./images/logos/C.svg";
+import threejs from "./images/logos/threejs.png"; // Add this line
+import kotlin from "./images/logos/kotlin.png"; // Add this line
+import django from "./images/logos/django.png"; // Add this line
+import sql from "./images/logos/sql.png"; // Add this line
 import { useInView } from "react-intersection-observer";
 import LanguageContext from "./Lng";
 
@@ -133,6 +137,42 @@ const Skills = () => {
               className="h-32 mx-auto bg-transparent"
             />
             <p className="text-2xl text-center bg-transparent">Node JS</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={threejs}
+              alt="Three.js Logo"
+              title="Three.js Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Three.js</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={kotlin}
+              alt="Kotlin Logo"
+              title="Kotlin Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Kotlin</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={django}
+              alt="Django Logo"
+              title="Django Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Django</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={sql}
+              alt="SQL Logo"
+              title="SQL Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">SQL</p>
           </li>
         </ul>
       </div>
