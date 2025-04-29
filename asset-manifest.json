@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.0f7a8eba.css",
-    "main.js": "/Portfolio/static/js/main.f734ba9d.js",
+    "main.css": "/Portfolio/static/css/main.4d5e8894.css",
+    "main.js": "/Portfolio/static/js/main.1fd0c291.js",
+    "static/media/legalnews.mp4": "/Portfolio/static/media/legalnews.18cf31ad8a5a87cdb90b.mp4",
     "static/media/Qubix.mp4": "/Portfolio/static/media/Qubix.50a5141a2485168deba7.mp4",
     "static/media/2.mp4": "/Portfolio/static/media/2.687003a562f2c11deae0.mp4",
     "static/media/4.mp4": "/Portfolio/static/media/4.793e44a4cb2f01268c6c.mp4",
@@ -31,17 +32,25 @@
     "static/media/javascript.png": "/Portfolio/static/media/javascript.8618298aa7a3f221cfc1.png",
     "static/media/sql.png": "/Portfolio/static/media/sql.be99f21a93dbdf9b0e20.png",
     "static/media/react.png": "/Portfolio/static/media/react.7f810bcc50eb5be9eda3.png",
+    "static/media/json.svg": "/Portfolio/static/media/json.79ae6a87a57b41890c6c5327e2d0cf2b.svg",
     "static/media/NodeJS.svg": "/Portfolio/static/media/NodeJS.78524595dc9efbd97ee938d5d77da5da.svg",
     "static/media/UK-flag.svg": "/Portfolio/static/media/UK-flag.b655986d51a395b27c4e645a67d65b5e.svg",
+    "static/media/xml.svg": "/Portfolio/static/media/xml.93dab34b9ae14fe4578fd526f571ef31.svg",
+    "static/media/docker.svg": "/Portfolio/static/media/docker.a2eecd96da9f90e20b8dd2c1d09a1fc3.svg",
     "static/media/C.svg": "/Portfolio/static/media/C.f3c93ffaea1321f5cfc0092ef579e390.svg",
+    "static/media/spring-boot.svg": "/Portfolio/static/media/spring-boot.b39d866ef15303bd4182807431613051.svg",
+    "static/media/angular.svg": "/Portfolio/static/media/angular.703c59a1ae1219cd0fecc1b48e3e18fe.svg",
+    "static/media/tensorflow.svg": "/Portfolio/static/media/tensorflow.f5088e8e377a3d03f117bb28ce544789.svg",
+    "static/media/git.svg": "/Portfolio/static/media/git.43d387b77657117c0e407816cbf72476.svg",
     "index.html": "/Portfolio/index.html",
+    "static/media/typescript.svg": "/Portfolio/static/media/typescript.f20748caf2dac55710ddeed71de0bac4.svg",
     "static/media/germany-flag.svg": "/Portfolio/static/media/germany-flag.07e0e86be92e76ed0c77a4f7ced361c1.svg",
     "static/media/firebase.svg": "/Portfolio/static/media/firebase.c55df03130647cc8ee934a0a6ebecf70.svg",
-    "main.0f7a8eba.css.map": "/Portfolio/static/css/main.0f7a8eba.css.map",
-    "main.f734ba9d.js.map": "/Portfolio/static/js/main.f734ba9d.js.map"
+    "main.4d5e8894.css.map": "/Portfolio/static/css/main.4d5e8894.css.map",
+    "main.1fd0c291.js.map": "/Portfolio/static/js/main.1fd0c291.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f7a8eba.css",
-    "static/js/main.f734ba9d.js"
+    "static/css/main.4d5e8894.css",
+    "static/js/main.1fd0c291.js"
   ]
 }
