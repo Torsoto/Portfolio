@@ -25,11 +25,9 @@ function App() {
           <Hero />
         </div>
         <About />
+        <Expierence />
         <Projects />
         <Skills />
-        <div className="hidden">
-          <Expierence />
-        </div>
         <Contact />
         <Footer />
       </LanguageContext.Provider>

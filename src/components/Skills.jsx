@@ -9,10 +9,18 @@ import tailwind from "./images/logos/tailwind.png";
 import NodeJS from "./images/logos/NodeJS.svg";
 import Firebase from "./images/logos/firebase.svg";
 import C from "./images/logos/C.svg";
-import threejs from "./images/logos/threejs.png"; // Add this line
-import kotlin from "./images/logos/kotlin.png"; // Add this line
-import django from "./images/logos/django.png"; // Add this line
-import sql from "./images/logos/sql.png"; // Add this line
+import threejs from "./images/logos/threejs.png";
+import kotlin from "./images/logos/kotlin.png";
+import django from "./images/logos/django.png";
+import sql from "./images/logos/sql.png";
+import SpringBoot from "./images/logos/spring-boot.svg";
+import TypeScript from "./images/logos/typescript.svg";
+import Docker from "./images/logos/docker.svg";
+import Git from "./images/logos/git.svg";
+import JSON from "./images/logos/json.svg";
+import TensorFlow from "./images/logos/tensorflow.svg";
+import XML from "./images/logos/xml.svg";
+import Angular from "./images/logos/angular.svg";
 import { useInView } from "react-intersection-observer";
 import LanguageContext from "./Lng";
 
@@ -173,6 +181,78 @@ const Skills = () => {
               className="h-32 mx-auto bg-transparent"
             />
             <p className="text-2xl text-center bg-transparent">SQL</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={SpringBoot}
+              alt="Spring Boot Logo"
+              title="Spring Boot Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Spring Boot</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={TypeScript}
+              alt="TypeScript Logo"
+              title="TypeScript Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">TypeScript</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={Docker}
+              alt="Docker Logo"
+              title="Docker Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Docker</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={Git}
+              alt="Git Logo"
+              title="Git Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Git</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={JSON}
+              alt="JSON Logo"
+              title="JSON Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">JSON</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={TensorFlow}
+              alt="TensorFlow Logo"
+              title="TensorFlow Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">TensorFlow + LiteRT</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={XML}
+              alt="XML Logo"
+              title="XML Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">XML</p>
+          </li>
+          <li className="bg-transparent">
+            <img
+              src={Angular}
+              alt="Angular Logo"
+              title="Angular Logo"
+              className="h-32 mx-auto bg-transparent"
+            />
+            <p className="text-2xl text-center bg-transparent">Angular</p>
           </li>
         </ul>
       </div>

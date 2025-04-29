@@ -74,6 +74,18 @@ const Navbar = () => {
         </li>
         <li className="p-4 cursor-pointer hover:scale-110 bg-transparent transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
           <Link
+            to="experience"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-70}
+          >
+            {isEnglish ? "Experience" : "Berufserfahrung"}
+          </Link>
+        </li>
+        <li className="p-4 cursor-pointer hover:scale-110 bg-transparent transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
+          <Link
             to="projects"
             smooth={true}
             duration={500}
@@ -94,18 +106,6 @@ const Navbar = () => {
             offset={-300}
           >
             {isEnglish ? "Skills" : "Fähigkeiten"}
-          </Link>
-        </li>
-        <li className="p-4 cursor-pointer hover:scale-110 bg-transparent transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px] hidden">
-          <Link
-            to="Expierence"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
-            {isEnglish ? "Expierence" : "Erfahrung"}
           </Link>
         </li>
         <li className="p-4 cursor-pointer hover:scale-110 bg-transparent transition-all ease-in-out duration-100 hover:text-[#fe3e57] text-[22px]">
@@ -193,6 +193,17 @@ const Navbar = () => {
           </li>
           <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#fe3e57] hover:font-bold hover:text-lg">
             <Link
+              to="experience"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+            >
+              {isEnglish ? "Experience" : "Berufserfahrung"}
+            </Link>
+          </li>
+          <li className="p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#fe3e57] hover:font-bold hover:text-lg">
+            <Link
               to="projects"
               smooth={true}
               duration={500}
@@ -213,17 +224,6 @@ const Navbar = () => {
               offset={-200}
             >
               {isEnglish ? "Skills" : "Fähigkeiten"}
-            </Link>
-          </li>
-          <li className="hidden p-4 transition-all duration-100 ease-in-out border-b cursor-pointer hover:text-[#fe3e57] hover:font-bold hover:text-lg">
-            <Link
-              to="Expierence"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-            >
-              {isEnglish ? "Expierence" : "Erfahrung"}
             </Link>
           </li>
           <li className="p-4 transition-all duration-100 ease-in-out cursor-pointer hover:text-[#fe3e57] hover:font-bold hover:text-lg">

@@ -7,6 +7,7 @@ import P2 from "./images/Project2/1.mp4";
 import P3 from "./images/Project3/1.jpg"
 import P4 from "./images/Project4/Qubix.mp4"
 import P5 from "./images/Project5/1.jpg"
+import P6 from "./images/Project6/legalnews.mp4"
 import LanguageContext from "./Lng";
 import { FaGithubSquare } from "react-icons/fa";
 
@@ -146,7 +147,7 @@ const Projects = () => {
               </div>
             </div>
             {isEnglish
-              ? "For my second and officially first Web-Development project at the FH, we created Typeflix. Together with my team from the FH, we used React and Tailwind CSS to create a theme-based typewriting game that tests users’ typing speed and displays them on the respective leaderboards. We also deepened our knowledge of backend development by integrating Firebase (a BaaS) and its features and implementing several REST web services/APIs.In addition, I expanded my knowledge of many important topics related to web development. For more information about the project, you can read the ReadMe on the GitHub repo."
+              ? "For my second and officially first Web-Development project at the FH, we created Typeflix. Together with my team from the FH, we used React and Tailwind CSS to create a theme-based typewriting game that tests users' typing speed and displays them on the respective leaderboards. We also deepened our knowledge of backend development by integrating Firebase (a BaaS) and its features and implementing several REST web services/APIs.In addition, I expanded my knowledge of many important topics related to web development. For more information about the project, you can read the ReadMe on the GitHub repo."
               : "Mein zweites und erstes offizieles Web-Development Projekt in der FH heißt, Typeflix. Zusammen mit meinem Team von der Fachhochschule haben wir mit React ein themenbasiertes Typewriting-Spiel erstellt, das die Tippgeschwindigkeit der Benutzer testet und sie in den jeweiligen Leaderboards anzeigt. Wir haben auch unsere Kenntnisse im Bereich Backend-Entwicklung vertieft, indem wir Firebase (einen BaaS) und dessen Features integriert und mehrere REST-Web-Services bzw. RESTful APIs implementiert haben. Außerdem habe ich durch dieses Projekt mein Wissen über viele Web-Development Themen/Technologien erweitert. Für weitere Informationen über das Projekt können Sie die ReadMe auf der GitHub-Repo lesen"}
           </div>
         </div>
@@ -231,6 +232,50 @@ const Projects = () => {
             {isEnglish
               ? "SentiScan is a web application that processes and analyzes tweets for sentiment, classifying them as positive, neutral, or negative. Developed with a team from the FH, it enhanced our backend skills using Python, Django, and SQLite, and integrated several RESTful APIs. The app is useful for companies and market researchers to understand public opinion on social media. We also gained insights into various AI models and improved our frontend skills with HTML, CSS, and JavaScript. More details are available in the ReadMe on the GitHub repo."
               : "SentiScan ist eine Webanwendung, die Tweets auf ihre Stimmung hin analysiert und als positiv, neutral oder negativ klassifiziert. Entwickelt mit einem Team von der FH, hat es unser Backend-Wissen durch die Verwendung von Python, Django und SQLite sowie die Integration mehrerer RESTful APIs erweitert. Die App ist nützlich für Unternehmen und Marktforscher, um die öffentliche Meinung in sozialen Medien zu verstehen. Wir haben auch Einblicke in verschiedene KI-Modelle gewonnen und unsere Frontend-Fähigkeiten mit HTML, CSS und JavaScript verbessert. Weitere Details finden Sie in der ReadMe auf der GitHub-Repo."}
+          </div>
+        </div>
+      </div>
+      <div className="pt-16 md:pt-32 max-w-[1400px] mx-auto bg-[#161b22]">
+        <div className="mx-auto grid grid-col-1 lg:grid-cols-2 grid-rows-1 pb-24  bg-[#161b22]">
+          <div
+            onClick={() => setShowM1(false)}
+            className="pb-8 lg:order-1 transition-all duration-200 my-auto ease-in-out bg-[#161b22]"
+          >
+            <video
+              src={P6}
+              alt="Legal News App Video"
+              className="mx-auto transition-all duration-200 ease-in-out rounded-md shadow-lg h-[550px] shadow-black"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+            ></video>
+          </div>
+          <div className="mx-4 pt-20 text-justify text-white bg-[#161b22] text-lg md:text-xl font-Montserrat">
+            <div className="flex bg-[#161b22]">
+              <div className="flex mx-auto bg-transparent">
+                <h1 className="pb-1 text-[#fe3e57] text-xl bg-[#161b22] sm:text-3xl font-Poppins">
+                  Legal News App
+                </h1>
+                <a
+                  href="https://github.com/Torsoto/LegalNews"
+                  alt="Link to Project Repository"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className="transition-all duration-100 ease-out bg-[#161b22]"
+                  title="Github-Repo"
+                >
+                  <FaGithubSquare
+                    size={30}
+                    className="mt-[3px] w-[50px] h-[50px] text-white md:w-[30px] md:h-[30px] ml-2 transition-all duration-300 ease-in-out bg-[#161b22] hover:scale-125"
+                  />
+                </a>
+              </div>
+            </div>
+            {isEnglish
+              ? "Legal News is a modern mobile application that provides automated notifications about new legislative changes in Austria and at the EU level. Built with React Native and Expo, it features push notifications, topic-based filtering, and integration with legal databases (RIS & EUR-Lex). The app uses Gemini AI for automatic categorization of legal documents and Firebase for authentication and backend services. This project enhanced my skills in mobile development, AI integration, and working with legal APIs. The combination of modern technologies with practical legal applications made this an exciting and educational project."
+              : "Legal News ist eine moderne Mobile-App, die automatisierte Benachrichtigungen über neue Gesetzesänderungen in Österreich und auf EU-Ebene bietet. Entwickelt mit React Native und Expo, bietet sie Push-Benachrichtigungen, themenbasierte Filterung und Integration mit Rechtsdatenbanken (RIS & EUR-Lex). Die App verwendet Gemini AI zur automatischen Kategorisierung von Rechtsdokumenten und Firebase für Authentifizierung und Backend-Dienste. Dieses Projekt hat meine Fähigkeiten in der mobilen Entwicklung, KI-Integration und der Arbeit mit Rechts-APIs verbessert. Die Kombination moderner Technologien mit praktischen Rechtsanwendungen machte dies zu einem spannenden und lehrreichen Projekt."}
           </div>
         </div>
       </div>
